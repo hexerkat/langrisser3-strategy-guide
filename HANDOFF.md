@@ -205,11 +205,13 @@ Total now **284 CHOICE entries / 45 scens**; love-index accuracy is locked to th
 攻略データ.
 
 **STILL OPEN (separate categories, not placeholders):** secret-stage **story-trigger**
-convos (scen011 ?2-trigger, scen035 ?4 line). Also a general scen prose-polish task
-(NOT choice-related) — e.g. the scen039 hero-quiz RESULT narrations have a decode bug
-("lost 0P" should be "200P"); out of choice scope, flagged for that pass. Remaining to
-ship the guide: GameFAQs 79-col styling + final `.txt` assembly into the patch, and a
-playtest.
+convos (scen011 ?2-trigger, scen035 ?4 line). **scen039 layout-fitting polish DONE
+2026-06-15**: 100% POLISHED (304/304, 0 errors), numbers spelled out in prose,
+"Super Lang" → "Super Langrisser". NOTE: the "lost 0P → 200P" I'd flagged is NOT a
+bug — a `<$05ED>` number tile supplies the 20-prefix so it renders "200P" in-game
+(`_flow` just strips the code). A general prose-polish of the OTHER scens is still
+open. Remaining to ship the guide: GameFAQs 79-col styling + final `.txt` assembly
+into the patch, and a playtest.
 
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
