@@ -1,0 +1,105 @@
+<!--
+  Strategy Guide — editorial template for Scenario 04 (file scen005, battle).
+  Prose/tables/diagrams are authored with canonical names written directly.
+  {{en|enf|jp|jpf:scen:idx}} variables are substituted with LIVE script text by
+  tools/strategy_guide_gen.py so the guide tracks the translation.
+-->
+# Scenario 04 — General Geier
+*The mountain road to Baron Torrand's manor*
+
+> Escort the Larcuss survivors through the hills while General Geier's hunting
+> party closes in. **Pierre** and **Liffany** join your cause here — and one
+> mischievous "wrong turn" can crack open the game's very first secret stage.
+
+## At a glance
+
+| | |
+|---|---|
+| **Victory** | Defeat every enemy unit *except* General Geier |
+| **Defeat** | Diehärte falls · every NPC is lost |
+| **New allies** | Pierre, Liffany (after the battle) |
+| **Secret** | Sets up **Stage ?1 — The Legendary Beef Noodle House** |
+
+## Order of battle
+
+| Side | Units |
+|---|---|
+| **Allies (NPC)** | Citizen ×2 (Lv 4) · Pierre (Lv 10) · Liffany (Lv 10) |
+| **Reinforcement** | Luna with 3 knights, around turn 5–6 |
+| **Enemy** | **General Geier (Lv 35)** · Knight ×2 (Lv 10) · Lord ×2 (Lv 9) · Fighter ×2 (Lv 7) · Fighter (Lv 10) · Hawk Knight ×2 (Lv 8) |
+
+## Buried treasure
+
+| Where | What to do | Reward |
+|---|---|---|
+| Small hole mid-map, below the waterfall | Bury it | 500 G |
+| ↑ same spot | Stomp the ground, then ask for something | Magic Herb |
+| ↑ same spot | Stomp the ground, then *don't* ask | Aegir Helm |
+| — | Keep every citizen alive to the end | Divine Blessing |
+
+## Walkthrough
+
+The enemy's **flying units** are the real danger — they swing wide to hit your
+column from behind, so screen your soft units with spears and bows. General
+Geier himself towers above your level; victory only needs the *rest* of his
+troop cleared, so never trade lives trying to fell him.
+
+```
+ BATTLE FLOW
+ ───────────────────────────────────────────────────────
+ Turn 1        The lone Lv 10 Fighter withdraws.
+ Turn 2        You're asked how to handle the NPCs —
+               send them toward Diehärte, away from the
+               fliers in the open.
+ Turn 5–6      Luna charges in with three knights.
+ After battle  Pierre and Liffany join the army.
+ ───────────────────────────────────────────────────────
+```
+
+## Branching dialogue
+
+A choice is only a trigger — it fires the line of dialogue beside it.
+
+### Which way do the citizens run?
+The survivors ask Diehärte where to flee:
+
+| Diehärte's order | What it means |
+|---|---|
+| **{{en:scen005:76}}** | The safe road. |
+| **{{en:scen005:77}}** | The *wrong* way — Liffany hurriedly corrects him. A first nudge toward Stage **?1**. |
+
+### Pierre asks about the wrong turn
+Later, Pierre can't help wondering aloud:
+
+> *{{en:scen005:97}}*
+
+| Diehärte's reply | …and he goes on |
+|---|---|
+| {{en:scen005:98}} | {{enf:scen005:101}} |
+| {{en:scen005:99}} | {{enf:scen005:104}} |
+| **{{en:scen005:100}}** ★ | {{enf:scen005:109}} |
+
+> ★ **Secret trigger** — answering *"{{en:scen005:100}}"* is one of the steps
+> that opens Stage ?1.
+
+## Stage ?1 — The Legendary Beef Noodle House
+
+Pull off all four steps and the hidden stage opens once this scenario ends:
+
+```
+ ╓─ UNLOCKING STAGE ?1 ────────────────────────────────╖
+ ║                                                      ║
+ ║  Turn 1         Move Lewin beside Diehärte.          ║
+ ║                                                      ║
+ ║  End of Turn 2  Lewin asks about the citizens →      ║
+ ║                 answer YES, then WEST.               ║
+ ║                                                      ║
+ ║  Any turn       Move Diehärte beside Pierre →        ║
+ ║                 his direction question → reply       ║
+ ║                 "It was a test" (3rd option).        ║
+ ║                                                      ║
+ ║  After battle   Tiaris speaks → choose the 1st       ║
+ ║                 option.                              ║
+ ║                                                      ║
+ ╙──────────────────────────────────────────────────────╜
+```
