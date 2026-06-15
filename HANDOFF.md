@@ -183,13 +183,24 @@ match its JP (entry count + control-code parity preserved, suite stayed green).
 NW/SE crests, Sc8/Sc31/Sc16 yes-no sub-prompts, ?3 18-or-over, ?4 safe code, and
 NPC-action triggers (Dios persuades Ruud). ?5 has no items.
 
-**RESIDUAL (still open, separate categories):** love-index blocks with no `何と`
-prompt — Sc16 present-buying (prep-phase), Sc10 after-battle 5-option, Sc21
-Emerick-near + Tiaris's-father, Sc23 after-battle quarrel, Sc33 confession; and
-secret-stage **story-trigger** convos (scen011 ?2-trigger, scen035 ?4 line). Also a
-general scen prose-polish task (NOT choice-related) is still pending — e.g. the
-scen039 hero-quiz RESULT narrations have a decode bug ("lost 0P" should be "200P");
-out of choice scope, flagged for that pass.
+**Residual love-index blocks — DONE (2026-06-15).** The previously-unwired
+blocks are now located, wired and reviewed: Sc10 address-the-party (scen061
+[29-33]), Sc16 buy-a-present (scen072[32-36]), Sc21 Emerick's-last-words
+(scen022[52-54]) + Tiaris-mourns-her-father (scen083[107-109]), Sc23 who-was-right
+(scen087[33-36]). Patch `8f13a2c`, guide `f814037`. Plus a misplaced/mislabeled
+table fixed: sc13.md's "who bears the Sword of Decimation" was really the **Sc14**
+opening "who do you ask" choice (scen068[63-67]) — relocated to sc14.md, sc13 has
+no choices. Patch `caf23d6`, guide `a0ba010`. **The guide now has ZERO placeholder
+tables** (every choice cell is a live JP balizador + EN var). Total: **266 CHOICE
+entries / 44 scens**.
+
+**STILL OPEN (separate categories, not placeholders):** Sc33 confession (scen107
+[41-46] 今、あなたの心に浮かぶ女性は誰 — undocumented in the guide, a content gap, not
+a broken table) and secret-stage **story-trigger** convos (scen011 ?2-trigger,
+scen035 ?4 line). Also a general scen prose-polish task (NOT choice-related) — e.g.
+the scen039 hero-quiz RESULT narrations have a decode bug ("lost 0P" should be
+"200P"); out of choice scope, flagged for that pass. Remaining to ship the guide:
+GameFAQs 79-col styling + final `.txt` assembly into the patch, and a playtest.
 
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
