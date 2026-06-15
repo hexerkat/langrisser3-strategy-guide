@@ -194,13 +194,22 @@ no choices. Patch `caf23d6`, guide `a0ba010`. **The guide now has ZERO placehold
 tables** (every choice cell is a live JP balizador + EN var). Total: **266 CHOICE
 entries / 44 scens**.
 
-**STILL OPEN (separate categories, not placeholders):** Sc33 confession (scen107
-[41-46] 今、あなたの心に浮かぶ女性は誰 — undocumented in the guide, a content gap, not
-a broken table) and secret-stage **story-trigger** convos (scen011 ?2-trigger,
-scen035 ?4 line). Also a general scen prose-polish task (NOT choice-related) — e.g.
-the scen039 hero-quiz RESULT narrations have a decode bug ("lost 0P" should be
-"200P"); out of choice scope, flagged for that pass. Remaining to ship the guide:
-GameFAQs 79-col styling + final `.txt` assembly into the patch, and a playtest.
+**Love-index effect audit vs 攻略データ — DONE (2026-06-15).** Consulted the
+`攻略データ` ヒロインシステム section (the authoritative love-index list, not just
+Budianto). Wired the post-Sc33 confession (scen107, into endings.md) and the two
+missing Sc4 blocks (scen005[173-175]/[198-200]). Cross-checked **all** effect
+columns: fixed a systematic Ｒ(Liffany)/Ｌ(Luna) mix-up + an omission in the
+multi-char blocks (Sc21 truce, Sc18, Sc4 Pierre); every per-heroine single-target
+cell verified correct as-is. Patch `deb6138`/`8b93527`, guide `b94d4ad`/`9110533`.
+Total now **284 CHOICE entries / 45 scens**; love-index accuracy is locked to the
+攻略データ.
+
+**STILL OPEN (separate categories, not placeholders):** secret-stage **story-trigger**
+convos (scen011 ?2-trigger, scen035 ?4 line). Also a general scen prose-polish task
+(NOT choice-related) — e.g. the scen039 hero-quiz RESULT narrations have a decode bug
+("lost 0P" should be "200P"); out of choice scope, flagged for that pass. Remaining to
+ship the guide: GameFAQs 79-col styling + final `.txt` assembly into the patch, and a
+playtest.
 
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
