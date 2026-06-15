@@ -41,6 +41,12 @@
     { "file": "sc33.md",                  "title": "Scenario 33 — Unwavering Loyalty" },
     { "file": "sc34.md",                  "title": "Scenario 34 — The Shape of a Heart" },
     { "file": "sc35.md",                  "title": "Scenario 35 — The True Enemy" },
-    { "file": "sc36.md",                  "title": "Scenario 36 — The Birth of a Legend" }
+    { "file": "sc36.md",                  "title": "Scenario 36 — The Birth of a Legend" },
+
+    { "file": "scq1.md",                  "title": "Stage ?1 — Hidden Gyudon Restaurant" },
+    { "file": "scq2.md",                  "title": "Stage ?2 — Successive Heroes" },
+    { "file": "scq3.md",                  "title": "Stage ?3 — The Queen and Aesthetic Men" },
+    { "file": "scq4.md",                  "title": "Stage ?4 — The Mightiest Foe" },
+    { "file": "scq5.md",                  "title": "Stage ?5 — Tale of a Gell Family" }
   ]
 }
