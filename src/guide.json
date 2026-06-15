@@ -17,6 +17,12 @@
     { "file": "sc09.md",                  "title": "Scenario 09 — Shaman Attack" },
     { "file": "sc10.md",                  "title": "Scenario 10 — Ceremony of Scorching Heat" },
     { "file": "sc11.md",                  "title": "Scenario 11 — Deception" },
-    { "file": "sc12.md",                  "title": "Scenario 12 — The Wise Sage Fauvel" }
+    { "file": "sc12.md",                  "title": "Scenario 12 — The Wise Sage Fauvel" },
+    { "file": "sc13.md",                  "title": "Scenario 13 — To Hunt a Holy Beast" },
+    { "file": "sc14.md",                  "title": "Scenario 14 — Dios on the Run" },
+    { "file": "sc15.md",                  "title": "Scenario 15 — The Sword of Decimation" },
+    { "file": "sc16.md",                  "title": "Scenario 16 — Call to Arms" },
+    { "file": "sc17.md",                  "title": "Scenario 17 — Operation Recapture Laffel" },
+    { "file": "sc18.md",                  "title": "Scenario 18 — Ultimate Military Device of Antiquity" }
   ]
 }
