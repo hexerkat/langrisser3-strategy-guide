@@ -213,8 +213,45 @@ bug — a `<$05ED>` number tile supplies the 20-prefix so it renders "200P" in-g
 open. Remaining to ship the guide: GameFAQs 79-col styling + final `.txt` assembly
 into the patch, and a playtest.
 
+## NEXT TASK — full guide review vs the 攻略データ (authoritative cross-check)
+
+The `攻略データ` (`/home/ralf/romhack/lang3_local_docs/LANGRISSER III SS の攻略デー
+タです.txt`, 1475 lines) is the authoritative Saturn strategy data. **It was
+under-used** (only its item + love-index sections). Verify the WHOLE guide
+against it, section by section, fixing factual discrepancies (this is QA, same
+spirit as the love-index audit that caught the Ｒ/Ｌ mix-ups). **JP `攻略データ`
+is authority; the patch + font are 100% OURS (built from the JP ISO) — never say
+"CWX", and inherited quirks need not be preserved (e.g. the `<$05ED>0P` number
+tile was switched to ASCII `200P`).**
+
+**攻略データ section map (line → guide target):**
+- L10 キャラクターメイク・フロー (creation quiz Q1–27 + class outcomes) → `src/01-character-creation.md`
+- L187 クラスチェンジ一覧 (per-character class table) → `src/02-classes.md`
+- L218 クラスアップ一覧 + L227–~390 ＊隠しクラスアップアイテム (class-up paths, hireable mercs, hidden class-up items) → `src/02-classes.md` (+ `04-items.md`)
+- L393 ヒロインシステム攻略 (love-index) → **DONE/verified** (effects locked to this list)
+- L653 全アイテムリスト (every item: name / VALUE / 入手面 / effect) → `src/04-items.md`
+- L972 隠しアイテム入手法 (buried items per scenario 1–36 + ?1–?5) → each `src/scNN.md`/`scqN.md` **Buried treasure** table. CHOICE rows DONE; **non-choice rows NOT yet cross-checked** (locations, vault contents, "rescue all villagers"-type rewards, item names).
+- L1197 召喚魔獣データ (summon-beast data) → not currently in the guide (decide if worth a section).
+- L1263 隠しシナリオへの道 (secret-stage unlock routes) → `scqN.md` unlock boxes + host-scenario triggers.
+- L1319 真のエンディングへの道 (true-ending conditions, Sc34 steps) + キャラクターの活躍度 (ending fate by stats) → `src/endings.md`.
+- L1371 知っていると得する情報 / 裏ワザ (scenario select, hidden shop, sound test, free-talk, Hero Select, NG+) → `src/cheats.md`.
+
+**Method per section:** read the 攻略データ block + the matching guide chapter;
+compare every fact (item name/value/location, condition, reward, step, class
+path); fix guide prose/tables and, where it's a live var, the patch EN entry.
+Names → `reference_names_terms_canon`; numbers in prose spelled out
+([[feedback_numbers_spelled_out_in_prose]]); fractions → direct %
+([[feedback_no_fraction_multipliers]]). Enemy rosters / battle tactics are NOT in
+the 攻略データ (those came from Budianto/playthrough) — don't try to verify those
+against it. Commit per section, **each repo from its own dir** (don't chain `cd`).
+Suggested order: buried-items non-choice sweep (biggest factual surface) →
+creation quiz → class data → item list → secret routes → true ending → cheats.
+
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
 `reference_budianto_walkthrough`, `reference_names_terms_canon`,
 `feedback_no_fraction_multipliers`, `feedback_structural_parity_total`,
-`feedback_guide_is_translation_qa`, `feedback_walkthrough_scope_no_general_polish`.
+`feedback_guide_is_translation_qa`, `feedback_walkthrough_scope_no_general_polish`,
+`feedback_numbers_spelled_out_in_prose`, `feedback_we_own_the_patch` (patch+font
+100% ours — no "CWX"), `reference_text_fitting_guide` + the `langrisser3-layout-fitting`
+skill (used for the scen039 100%-polish pass).
