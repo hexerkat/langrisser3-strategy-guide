@@ -61,6 +61,16 @@ def test_prose_untouched(tmp_path):
     assert _render(tmp_path, "Pierre and Liffany join.") == "Pierre and Liffany join."
 
 
+def test_jp_balizador_literal_asserts_position(tmp_path):
+    # {{jp:scen:idx:LITERAL}} renders the literal balizador AND asserts it equals
+    # the live JP entry at that index. A matching literal renders; a mismatch
+    # (entry moved / text drifted) is a hard error — this is the slot-parity guard
+    # that lets the EN var at the same index be trusted.
+    assert _render(tmp_path, "{{jp:scen777:1:何と言う？}}") == "何と言う？"
+    with pytest.raises(AssertionError):
+        _render(tmp_path, "{{jp:scen777:1:まちがい}}")
+
+
 def test_missing_entry_errors(tmp_path):
     with pytest.raises(IndexError):
         _render(tmp_path, "{{en:scen777:99}}")

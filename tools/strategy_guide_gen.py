@@ -50,7 +50,12 @@ def _scripts_root() -> Path:
                      "repo's scripts/ directory")
 
 
-_VAR = re.compile(r'\{\{\s*(en|enf|jp|jpf)\s*:\s*([A-Za-z0-9_]+)\s*:\s*(\d+)\s*\}\}')
+# Optional 4th segment = the LITERAL JP balizador (jp/jpf only): the literal is
+# rendered AND asserted equal to the live entry at that index, so a moved/edited
+# entry breaks the build (slot-parity guard for the paired EN var). e.g.
+#   {{jp:scen008:72:そんな事はない}}
+_VAR = re.compile(
+    r'\{\{\s*(en|enf|jp|jpf)\s*:\s*([A-Za-z0-9_]+)\s*:\s*(\d+)\s*(?::\s*([^}]*?)\s*)?\}\}')
 _F600 = re.compile(r'<\$F600><\$0000>')
 _CTRL = re.compile(r'<\$[0-9A-Fa-f]{4}>')
 _COMMENT = re.compile(r'<!--.*?-->\s*', re.DOTALL)  # authoring notes, stripped from output
@@ -105,10 +110,19 @@ def render_template(template: str, scripts_root: Path) -> str:
     template = _COMMENT.sub('', template)
 
     def repl(m: 're.Match') -> str:
-        kind, scen, idx = m.group(1), m.group(2), int(m.group(3))
+        kind, scen, idx, literal = m.group(1), m.group(2), int(m.group(3)), m.group(4)
         lang = 'jp' if kind.startswith('jp') else 'en'
         raw = scripts.entry(lang, scen, idx)
-        return _flow(raw, hero=(lang == 'en'))
+        rendered = _flow(raw, hero=(lang == 'en'))
+        if literal is not None:
+            if lang != 'jp':
+                raise ValueError(f"literal balizador only valid on jp/jpf: {m.group(0)}")
+            if rendered != literal:
+                raise AssertionError(
+                    f"JP balizador mismatch at {scen}:{idx} — source literal "
+                    f"{literal!r} but live entry is {rendered!r}. The entry moved "
+                    f"or its JP changed; re-pair the EN var at this index.")
+        return literal if literal is not None else rendered
 
     return _VAR.sub(repl, template)
 
