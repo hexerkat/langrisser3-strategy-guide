@@ -23,6 +23,12 @@
     { "file": "sc15.md",                  "title": "Scenario 15 — The Sword of Decimation" },
     { "file": "sc16.md",                  "title": "Scenario 16 — Call to Arms" },
     { "file": "sc17.md",                  "title": "Scenario 17 — Operation Recapture Laffel" },
-    { "file": "sc18.md",                  "title": "Scenario 18 — Ultimate Military Device of Antiquity" }
+    { "file": "sc18.md",                  "title": "Scenario 18 — Ultimate Military Device of Antiquity" },
+    { "file": "sc19.md",                  "title": "Scenario 19 — A man called Bortz" },
+    { "file": "sc20.md",                  "title": "Scenario 20 — Skirmish in the Vast Skies" },
+    { "file": "sc21.md",                  "title": "Scenario 21 — The Magnificent capital, Larcussia" },
+    { "file": "sc22.md",                  "title": "Scenario 22 — To a New Battle" },
+    { "file": "sc23.md",                  "title": "Scenario 23 — The Necromancer, Again" },
+    { "file": "sc24.md",                  "title": "Scenario 24 — The Field Marshal's Determination" }
   ]
 }
