@@ -11,6 +11,12 @@
     { "file": "sc03.md",                  "title": "Scenario 03 — The Sad-Eyed Master Swordsman" },
     { "file": "sc04.md",                  "title": "Scenario 04 — General Geier" },
     { "file": "sc05.md",                  "title": "Scenario 05 — Wily General Emerick" },
-    { "file": "sc06.md",                  "title": "Scenario 06 — Enemies on all Sides" }
+    { "file": "sc06.md",                  "title": "Scenario 06 — Enemies on all Sides" },
+    { "file": "sc07.md",                  "title": "Scenario 07 — Mountain Pass Reunion" },
+    { "file": "sc08.md",                  "title": "Scenario 08 — The Southern Lushiris Gate" },
+    { "file": "sc09.md",                  "title": "Scenario 09 — Shaman Attack" },
+    { "file": "sc10.md",                  "title": "Scenario 10 — Ceremony of Scorching Heat" },
+    { "file": "sc11.md",                  "title": "Scenario 11 — Deception" },
+    { "file": "sc12.md",                  "title": "Scenario 12 — The Wise Sage Fauvel" }
   ]
 }
