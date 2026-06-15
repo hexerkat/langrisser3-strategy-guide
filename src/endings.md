@@ -68,6 +68,27 @@ needs her love index high enough by then. Rough safe targets (per the 攻略デ�
 The full per-choice tables and the "win all five" route are in *The Heroine
 System*. Note the love index can also be seeded back in **Character Creation**.
 
+### The confession itself
+
+After Scenario 33, Diehärte is asked *"{{en:scen107:38}}"*:
+
+| JP (balizador) | EN (in-game) | Effect |
+|---|---|---|
+| {{jp:scen107:39:女性}} | {{en:scen107:39}} | go on to name a heroine |
+| {{jp:scen107:40:男性}} | {{en:scen107:40}} | the **Hero Select** gag (needs Iron Dumbbell + Vaseline in your bags) |
+
+Then *"{{en:scen107:41}}"* — name the heroine you courted (her love index must be
+high enough, per the table above). A second, identical prompt asks again to
+confirm; answer **yes** at *"{{en:scen107:56}}"* to seal it.
+
+| JP (balizador) | EN (in-game) |
+|---|---|
+| {{jp:scen107:42:ティアリス}} | {{en:scen107:42}} |
+| {{jp:scen107:43:リファニー}} | {{en:scen107:43}} |
+| {{jp:scen107:44:ルナ}} | {{en:scen107:44}} |
+| {{jp:scen107:45:ソフィア}} | {{en:scen107:45}} |
+| {{jp:scen107:46:フレア}} | {{en:scen107:46}} |
+
 ## After the credits
 
 Once the ending and staff roll finish, **leave the screen alone** — wait without
