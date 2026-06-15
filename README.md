@@ -42,7 +42,7 @@ Chapter order lives in `src/guide.json`.
 - ✅ Character Creation (Lushiris quiz, Q1–Q27)
 - ✅ Classes & Class Change
 - ✅ Heroine (love-index) system
-- 🟡 Item List — Weapons done; armor / accessories / consumables / Runes to add
+- ✅ Item List — weapons, armor, shields, helmets, accessories, consumables, Runes, hidden class-up items
 - ✅ Scenario 04 (walkthrough format example)
 - ⬜ Walkthrough for the remaining scenarios + secret stages, endings
 - ⬜ GameFAQs plain-text styling pass + final `.txt` assembly into the patch repo
