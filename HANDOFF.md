@@ -114,7 +114,7 @@ resolved manually against `fntsys10E.txt`. Reuse this for any new item refs.
   scenarios + endings further down (unread — start there for the walkthrough).
 - Plan doc (in the patch repo, local): `archive/docs/20260614_choice_budget_and_meta_guide_plan.md`.
 
-## Choice-QA rollout (IN PROGRESS — the guide as a translation-QA tool)
+## Choice-QA rollout (SUBSTANTIALLY DONE — the guide as a translation-QA tool)
 
 The guide's branching-dialogue tables are being rebuilt so each option is a
 **JP literal balizador + live EN var + effect**, which both displays the real
@@ -127,36 +127,29 @@ on `meta-guide-choice-qa`, registered in `config/entry-annotations.json`
 (`class=CHOICE`) and guarded by `tests/test_choice_fit.py` + `test_entry_counts`
 + `test_control_code_parity`. See memory `feedback_guide_is_translation_qa`.
 
-**DONE:** all in-battle blocks Sc1–36 + Sc1 (scen043) + Sc15 (scen071). 16 real
-EN fixes landed (e.g. scen018[55] わからずや "stubborn fool" was "I don't
-understand"; scen018[143] "Flare"→Freya; scen033[70] まったくだ "No doubt" was
-"It maybe is"; scen071[43] わかりきった "It's obvious" was "I think I understand";
-+ many overflow refits).
+**DONE:** every cleanly-locatable love-index/persuasion block is wired (JP
+balizador + live EN) and reviewed. **90 CHOICE entries across 23 scens** registered
+in `config/entry-annotations.json`; ~19 EN choice entries fixed in the patch.
+In-battle: Sc1–36 (incl. all Freya-persuasion blocks). Cutscene/inter: Sc1
+(scen043), Sc7 (scen055), Sc15 (scen071), Sc16 Freya (scen072), Sc18 (scen077),
+Sc19 (scen079), Sc21 truce (scen083), Sc27 (scen094), Sc29 ×2 (scen098), ?1
+(scen038 ×2), ?2 Tiaris (scen039).
 
-**REMAINING — cutscene/inter blocks (fully scoped via the corpus map below).**
-Find each choice block by grepping `何と(答え|話しかけ|言い)` in the JP file; the
-options are the consecutive entries after the prompt. Pair Budianto romaji → JP →
-EN, wire `{{jp:..:LIT}}`+`{{en}}`, review/fix EN, register, run choice-fit.
+Sample fixes: scen018[55] わからずや "stubborn fool" (was "I don't understand");
+scen018[143] "Flare"→Freya; scen033[70] まったくだ "No doubt" (was "It maybe is");
+scen071[43] わかりきった "It's obvious" (was "I think I understand"); + overflow
+refits (scen008/010/011/012/015/025/033/055/072/038).
 
-| File | Scenario / block |
-|---|---|
-| scen055 | Sc7 Freya flashback |
-| scen072 | Sc16 (present / Freya talk) |
-| scen077 | Sc18 chase-vs-rescue |
-| scen079 | Sc19 Raymond rescue |
-| scen083 | Sc21 (Emerick / truce / Tiaris's father) |
-| scen094 | Sc27 Luna news |
-| scen098 | Sc29 Liffany (×2) |
-| scen011 (3rd prompt) | Sc10 after-battle 5-option |
-| scen006 | Sc5 (verify — a prompt exists) |
-| scen034 / scen035 | Sc33 confession / Sc34 |
-| scen038 / scen039 / scen040 | secret-stage blocks (?2 heroes Q&A in scen039) |
-| scq1–scq5 chapters | secret-stage choice tables still paraphrased |
-
+**RESIDUAL — kept as effects-only tables (flagged "in-game wording pending");
+no `何と` prompt found, or non-dialogue mechanism:** Sc16 present-buying
+(prep-phase), Sc10 after-battle 5-option, Sc21 Emerick-near + Tiaris's-father,
+Sc23 after-battle quarrel, Sc33 confession (multi-heroine). Secret-stage **trigger**
+choices (scen011 ?2-trigger convos, scen035 ?4 line, scen040 Dios/Ruud) and all
+**item-trigger** choices (buried-treasure selections, e.g. Love/Power/Courage,
+Devil Axe, Thor blessing) are separate categories, not yet wired. To find a block:
+grep `何と(答え|話しかけ|言い)` in the JP file; options follow the prompt.
 To retrofit literals after writing 3-segment `{{jp:scen:idx}}` vars, re-run the
-bake loop (regex `\{\{jp:(scen\w+):(\d+)\}\}` → add `:_flow(jp[idx])`). Item-
-trigger choices (buried-treasure selections, e.g. Love/Power/Courage) are a
-separate future category — not yet wired.
+bake loop (regex `\{\{jp:(scen\w+):(\d+)\}\}` → add `:_flow(jp[idx])`).
 
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
