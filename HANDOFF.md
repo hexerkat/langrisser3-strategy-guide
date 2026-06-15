@@ -114,7 +114,52 @@ resolved manually against `fntsys10E.txt`. Reuse this for any new item refs.
   scenarios + endings further down (unread — start there for the walkthrough).
 - Plan doc (in the patch repo, local): `archive/docs/20260614_choice_budget_and_meta_guide_plan.md`.
 
+## Choice-QA rollout (IN PROGRESS — the guide as a translation-QA tool)
+
+The guide's branching-dialogue tables are being rebuilt so each option is a
+**JP literal balizador + live EN var + effect**, which both displays the real
+in-game text and **reviews/fixes the EN translation**. Mechanism: the generator's
+`{{jp:scen:idx:LITERAL}}` renders the literal AND asserts it equals the live JP
+entry (slot-position guard; mismatch = build error). Format = `| JP (balizador) |
+EN (in-game) | Effect |`. EN fixes (overflow past the choice budget = balloon
+width − 1 cursor, OR mistranslation/unnatural vs JP) are committed to the **patch**
+on `meta-guide-choice-qa`, registered in `config/entry-annotations.json`
+(`class=CHOICE`) and guarded by `tests/test_choice_fit.py` + `test_entry_counts`
++ `test_control_code_parity`. See memory `feedback_guide_is_translation_qa`.
+
+**DONE:** all in-battle blocks Sc1–36 + Sc1 (scen043) + Sc15 (scen071). 16 real
+EN fixes landed (e.g. scen018[55] わからずや "stubborn fool" was "I don't
+understand"; scen018[143] "Flare"→Freya; scen033[70] まったくだ "No doubt" was
+"It maybe is"; scen071[43] わかりきった "It's obvious" was "I think I understand";
++ many overflow refits).
+
+**REMAINING — cutscene/inter blocks (fully scoped via the corpus map below).**
+Find each choice block by grepping `何と(答え|話しかけ|言い)` in the JP file; the
+options are the consecutive entries after the prompt. Pair Budianto romaji → JP →
+EN, wire `{{jp:..:LIT}}`+`{{en}}`, review/fix EN, register, run choice-fit.
+
+| File | Scenario / block |
+|---|---|
+| scen055 | Sc7 Freya flashback |
+| scen072 | Sc16 (present / Freya talk) |
+| scen077 | Sc18 chase-vs-rescue |
+| scen079 | Sc19 Raymond rescue |
+| scen083 | Sc21 (Emerick / truce / Tiaris's father) |
+| scen094 | Sc27 Luna news |
+| scen098 | Sc29 Liffany (×2) |
+| scen011 (3rd prompt) | Sc10 after-battle 5-option |
+| scen006 | Sc5 (verify — a prompt exists) |
+| scen034 / scen035 | Sc33 confession / Sc34 |
+| scen038 / scen039 / scen040 | secret-stage blocks (?2 heroes Q&A in scen039) |
+| scq1–scq5 chapters | secret-stage choice tables still paraphrased |
+
+To retrofit literals after writing 3-segment `{{jp:scen:idx}}` vars, re-run the
+bake loop (regex `\{\{jp:(scen\w+):(\d+)\}\}` → add `:_flow(jp[idx])`). Item-
+trigger choices (buried-treasure selections, e.g. Love/Power/Courage) are a
+separate future category — not yet wired.
+
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
 `reference_budianto_walkthrough`, `reference_names_terms_canon`,
-`feedback_no_fraction_multipliers`, `feedback_structural_parity_total`.
+`feedback_no_fraction_multipliers`, `feedback_structural_parity_total`,
+`feedback_guide_is_translation_qa`, `feedback_walkthrough_scope_no_general_polish`.
