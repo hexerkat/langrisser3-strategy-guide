@@ -151,6 +151,33 @@ grep `何と(答え|話しかけ|言い)` in the JP file; options follow the pro
 To retrofit literals after writing 3-segment `{{jp:scen:idx}}` vars, re-run the
 bake loop (regex `\{\{jp:(scen\w+):(\d+)\}\}` → add `:_flow(jp[idx])`).
 
+### NEXT TASK — item-trigger choice sweep (user-approved, FULL same treatment)
+
+The **buried-treasure selection options** (the menu choices the player picks on the
+map to get an item — NOT love-index) get the **same QA pipeline**: JP balizador +
+live EN var in the *Buried treasure* table, EN reviewed/fixed vs JP, registered
+`class=CHOICE`, run choice-fit. ~50 options across ~30 scens + secrets. Today they
+are plain English paraphrases ("Choose 'X'") — not QA'd.
+
+Per block: (1) **locate** in the battle file (scen002–041; some scen042+) — most use
+the `何と答えますか？` prompt, options follow; cross-ref the 攻略データ buried-item
+choices (`選択肢：X`) + Budianto. (2) **wire** the choice cell as
+`{{jp:scenNNN:idx:LIT}}` + `{{en:scenNNN:idx}}` (reward stays `{{en:fntsys10:N}}`);
+write 3-seg `{{jp:scen:idx}}` then bake. (3) **review EN** — both gates (budget 11
+single-line no `<$FFFC>`, no leading space, FFFD/FFFE parity; natural/faithful/spoken
+punctuation); fix the patch entry on overflow/mistranslation. (4) **register** in
+`config/entry-annotations.json`. (5) **verify** choice-fit + guide build + patch suite
+803. Commit per wave (Sc1–12, 13–24, 25–36, secrets), **each repo from its own dir**
+(don't chain `cd` between repos — it nearly dropped a patch commit once).
+
+Already located (start here to confirm the pipeline): **scen006[135-137]** Devil Axe
+(気になるからだ/何となく/答える必要はない); **scen020[96-98]** Love/Power/Courage
+(愛/力/勇気); **scen034[92-94]** Thor blessing (フレイ/トール/ロキ). Rules: JP =
+truth, romaji = context only; item choices give ITEMS (reward col), not love-index;
+plain ACTIONS ("Bury it", "Stand a unit on it") are NOT menu choices — leave as
+prose; do NOT touch general narration prose (separate task). The full resume prompt
+for this task was handed to the user 2026-06-15.
+
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
 `reference_budianto_walkthrough`, `reference_names_terms_canon`,
