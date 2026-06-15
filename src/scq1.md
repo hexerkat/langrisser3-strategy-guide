@@ -42,8 +42,8 @@ into the unknown — and to a legendary beef-bowl shop run in the middle of nowh
 
 | Where | What to do | Reward |
 |---|---|---|
-| Stone pillar jutting out, top-right | "Gaze intently" | Mercenary Attack +1 |
-| At the counter | Eat gyudon → **"everyone (1750 P)"** | All **male** members' Vitality +1 |
+| Stone pillar jutting out, top-right | Pick "{{en:scen038:166}}" ({{jp:scen038:166:じっと暴つめる}}) | Mercenary Attack +1 |
+| At the counter | Eat gyudon → "{{en:scen038:129}}" ({{jp:scen038:129:全員}}) (1750 P) | All **male** members' Vitality +1 |
 
 ## Walkthrough
 
@@ -69,12 +69,13 @@ party.
 | {{jp:scen038:207:いやだ}} | {{en:scen038:207}} | Liffany −1 |
 | {{jp:scen038:208:わかった}} | {{en:scen038:208}} | — |
 
-### Everyone reaches the shop (in-game wording pending)
+### Everyone reaches the shop
+*Field choice — budget 11.*
 
-| Choice | Effect |
-|---|---|
-| Just me | Liffany, Luna & Tiaris −1 |
-| Just the girls | Liffany, Luna & Tiaris −1 |
-| Everyone | Liffany, Luna & Tiaris +1 |
+| JP (balizador) | EN (in-game) | Effect |
+|---|---|---|
+| {{jp:scen038:127:自分だけ}} | {{en:scen038:127}} | Liffany, Luna & Tiaris −1 |
+| {{jp:scen038:128:女の子だけ}} | {{en:scen038:128}} | Liffany, Luna & Tiaris −1 |
+| {{jp:scen038:129:全員}} | {{en:scen038:129}} | Liffany, Luna & Tiaris +1 |
 
 > Run out the 20-turn clock and Liffany, Luna & Tiaris −1.

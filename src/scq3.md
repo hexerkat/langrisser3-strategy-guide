@@ -28,7 +28,7 @@ prompt: **"pray"**, **"dance for now"**, **"strike a pose."**
 
 | Where | What to do | Reward |
 |---|---|---|
-| Northeast — centre of the **black cross pattern** | "Tap it" → **Uminin face** | {{en:fntsys10:35}} |
+| Northeast — centre of the **black cross pattern** | Pick "{{en:scen040:130}}" ({{jp:scen040:130:叩いてみる}}) → "{{en:scen040:136}}" ({{jp:scen040:136:うみにん面}}) | {{en:fntsys10:35}} |
 | South — the frame whose character reads **"汁" (broth)** | "Under 18" | {{en:fntsys10:137}} |
 | ↑ same spot | "18 or over" | {{en:fntsys10:84}} |
 

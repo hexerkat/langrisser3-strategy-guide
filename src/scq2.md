@@ -35,22 +35,22 @@ Shikairo** next to each other.
 
 | Where | What to do | Reward |
 |---|---|---|
-| Central **stone circle** | "Sacrifice ritual" → "offer a sacrifice" → **holy beast** | {{en:fntsys10:46}} |
-| ↑ same spot | "Sacrifice ritual" → "offer a sacrifice" → **your own blood (HP −10)** | {{en:fntsys10:118}} |
+| Central **stone circle** | Pick "{{en:scen039:229}}" ({{jp:scen039:229:生け贄の儀式}}) → "{{en:scen039:235}}" ({{jp:scen039:235:聖獣}}) | {{en:fntsys10:46}} |
+| ↑ same spot | Pick "{{en:scen039:229}}" ({{jp:scen039:229:生け贄の儀式}}) → "{{en:scen039:236}}" ({{jp:scen039:236:己の血}}) (**HP −10**) | {{en:fntsys10:118}} |
 | — | Defeat **all enemies** | {{en:fntsys10:147}} |
 
 ### The heroes' questions (lore Easter egg)
 Answer "yes" to the *"can't you get a date?"* prompt near Ledin/Erwin, then
 approach each hero for a question:
 
-| Hero | Answer | Reward |
+| Hero | Answer (JP balizador / in-game EN) | Reward |
 |---|---|---|
-| Ledin | "I could use support magic." | 500 P |
-| Sherry | "Kalvas." | Power Fruit |
-| Chris | "I married Ledin." | Cross |
-| Erwin | "Bernhardt." | Valor Seed |
-| Narm | "Lance." | Wisdom Fruit |
-| Liana | "Vanished with Alhazard." | Guard Fruit |
+| Ledin | {{jp:scen039:138:補助魔法ができた}} / "{{en:scen039:138}}" | 500 P |
+| Sherry | {{jp:scen039:214:カルザス}} / "{{en:scen039:214}}" | Power Fruit |
+| Chris | {{jp:scen039:150:レディンと結婚した}} / "{{en:scen039:150}}" | Cross |
+| Erwin | {{jp:scen039:190:ベルンハルト}} / "{{en:scen039:190}}" | Valor Seed |
+| Narm | {{jp:scen039:167:ランス}} / "{{en:scen039:167}}" | Wisdom Fruit |
+| Liana | {{jp:scen039:202:アルハザードと共に消滅}} / "{{en:scen039:202}}" | Guard Fruit |
 
 ## Walkthrough
 

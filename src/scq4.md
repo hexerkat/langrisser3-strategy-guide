@@ -28,7 +28,7 @@ afterward, choose the new line **"it was an easy win, so I'm fine."**
 | Where | What to do | Reward |
 |---|---|---|
 | Behind the throne, where the **carpet is peeled back** | Open the safe — code **33659033** | {{en:fntsys10:132}} |
-| The throne where **Altemüller** sits | "Examine his chest" | {{en:fntsys10:72}} |
+| The throne where **Altemüller** sits | Pick "{{en:scen041:68}}" ({{jp:scen041:68:胸のあたりを調べる}}) | {{en:fntsys10:72}} |
 
 ## Walkthrough
 
