@@ -54,14 +54,27 @@ party.
 
 ## Branching dialogue
 
-| When | Option | Effect |
+### Reaching the bunny girl
+*Field choice — budget 11.*
+
+| JP (balizador) | EN (in-game) | Effect |
 |---|---|---|
-| Reaching the bunny girl | "Tell me or I'll hurt you." | Liffany −1 |
-| | "I'll save the fun for later." | — |
-| After the gell are cleared | "No way." | Liffany −1 |
-| | "Understood." | — |
-| Everyone reaches the shop | "Just me." | Liffany, Luna & Tiaris −1 |
-| | "Just the girls." | Liffany, Luna & Tiaris −1 |
-| | "Everyone." | Liffany, Luna & Tiaris +1 |
+| {{jp:scen038:104:教えないとケガするぞ}} | {{en:scen038:104}} | Liffany −1 |
+| {{jp:scen038:105:かしみは取っておこう}} | {{en:scen038:105}} | — |
+
+### After the gell are cleared
+
+| JP (balizador) | EN (in-game) | Effect |
+|---|---|---|
+| {{jp:scen038:207:いやだ}} | {{en:scen038:207}} | Liffany −1 |
+| {{jp:scen038:208:わかった}} | {{en:scen038:208}} | — |
+
+### Everyone reaches the shop (in-game wording pending)
+
+| Choice | Effect |
+|---|---|
+| Just me | Liffany, Luna & Tiaris −1 |
+| Just the girls | Liffany, Luna & Tiaris −1 |
+| Everyone | Liffany, Luna & Tiaris +1 |
 
 > Run out the 20-turn clock and Liffany, Luna & Tiaris −1.

@@ -63,7 +63,10 @@ the **1st option** makes them ally *against you* (and opens the items above); th
 
 ## Branching dialogue
 
-| When | Option | Effect |
+### Opening — conversation with Tiaris
+*Field choice — budget 11.*
+
+| JP (balizador) | EN (in-game) | Effect |
 |---|---|---|
-| Opening (to Tiaris) | "You're right." | Tiaris −1 |
-| | "It's just your imagination." | — |
+| {{jp:scen039:40:その通りだ}} | {{en:scen039:40}} | Tiaris −1 |
+| {{jp:scen039:41:それは気のせいだ}} | {{en:scen039:41}} | — |
