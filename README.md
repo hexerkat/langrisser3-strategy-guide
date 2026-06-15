@@ -43,8 +43,8 @@ Chapter order lives in `src/guide.json`.
 - ✅ Classes & Class Change
 - ✅ Heroine (love-index) system
 - ✅ Item List — weapons, armor, shields, helmets, accessories, consumables, Runes, hidden class-up items
-- ✅ Scenario 04 (walkthrough format example)
-- ⬜ Walkthrough for the remaining scenarios + secret stages, endings
+- ✅ Walkthrough — **all 36 scenarios + secret stages ?1–?5**
+- ✅ Endings & best-ending route + Secrets & Cheats appendix
 - ⬜ GameFAQs plain-text styling pass + final `.txt` assembly into the patch repo
 
 ## Sources

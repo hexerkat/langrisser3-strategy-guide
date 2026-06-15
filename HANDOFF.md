@@ -5,11 +5,20 @@ Resume point for the next session. Context was cleared after this was written.
 ## TL;DR
 
 The Strategy Guide is its **own repo/project** (this one). The English-patch repo
-ships **only the compiled `.txt`** later. Systemic chapters are **done**
-(character creation, classes, heroines, full item list) + one walkthrough
-scenario as the format standard. **Next: author the Walkthrough** (scenarios
-1–36 + secret stages ?1–?5 + endings), then a **GameFAQs plain-text styling
-pass**, then assemble the final `.txt` into the patch repo.
+ships **only the compiled `.txt`** later. Systemic chapters are **done** and the
+**Walkthrough is now complete**: all **36 scenarios + secret stages ?1–?5 +
+endings/best-ending route + secrets/cheats appendix** (build = 3393 lines, suite
+green, zero unresolved vars). **Next: the GameFAQs plain-text styling pass**
+(79-col ASCII: TOC, anchors, dividers), then assemble the final `.txt` into the
+patch repo.
+
+### Scenario→file mapping (resolved — was the old blocker)
+- **Cutscene intro** = `scen{040 + 2N}` for in-game Scenario N (Sc1→042 … Sc36→112;
+  secrets ?1→114, ?2→116, ?3→118, ?4→120; ?5 = the label-less Gel bonus, no cutscene).
+  Intro narration is the first paragraph after the `ＳＣＥＮＡＲＩＯ‐NN` label entry.
+- **Battle file** = `scen{N+1}` (Sc1→002 … verified through Sc25→026 by location
+  label + objective + roster vs Budianto). Battle-dialogue vars are NOT wired yet
+  (deferred); only cutscene intro + fntsys10 item-name vars are live in the guide.
 
 ## The two repos
 
@@ -56,28 +65,27 @@ python3 -m pytest tests/ -q                                              # 5 tes
 | `src/02-classes.md` | ✅ class lines, ladders, hidden classes, Shika/monster trees |
 | `src/03-heroines.md` | ✅ love-index system, 5 heroines, shared choices, best-end cheat sheet |
 | `src/04-items.md` | ✅ full item list (weapons→Runes→class-up), names = live fntsys10 vars |
-| `src/scen005.md` | ✅ Scenario 04 — the **approved walkthrough format standard** |
+| `src/sc01.md … sc36.md` | ✅ Walkthrough, all 36 scenarios (renamed `scen005.md`→`sc04.md`) |
+| `src/scq1.md … scq5.md` | ✅ secret stages ?1–?5 |
+| `src/endings.md` | ✅ normal vs true ending, best-ending recipe, Freya checklist, heroine choice |
+| `src/cheats.md` | ✅ secrets & cheats appendix (hidden shop, scenario-select, MP bug, infinite-P, …) |
 
-## NEXT SESSION — the Walkthrough (the big remaining piece)
+## NEXT SESSION — GameFAQs styling pass + assembly
 
-Author scenarios **1–36 + secret stages ?1–?5 + endings** in the `scen005.md`
-format (per-scenario: at-a-glance / order of battle / buried treasure /
-walkthrough / branching dialogue / secrets). Add each as `src/scenNNN.md` (or a
-per-in-game-scenario file) and register in `src/guide.json`.
+The content is done; what remains is **presentation**:
+1. **GameFAQs plain-text styling pass** — convert the assembled markdown to 79-col
+   ASCII (a numbered TOC with `[xx]` anchors, section dividers, ASCII tables/boxes).
+   Decide whether to extend the generator with a `--gamefaqs` text renderer or add
+   a post-processor; keep the live-var substitution intact.
+2. **Assemble + hand off the `.txt`** into the patch repo (the patch ships only the
+   compiled result). Confirm the destination path with the user.
 
-### Blocking dependency: the scenario→file mapping
-Live dialogue variables need `in-game Scenario N → scriptfile scenNNN`. Confirmed
-ONLY for: **Sc 1** = scen042 (cutscene) + scen002 (battle); **Sc 2** = scen044 +
-scen003; **Sc 4** = scen005. The numbering has **no clean logic**
-(patch `archive/docs/scenario-file-mapping.md`). For the rest, resolve per
-scenario by matching the location-label header / JP content
-(`grep -l 'Vice Capital' scripts/en/scen00*E.txt`, etc.).
-
-**User did NOT pick an approach yet** (deferred to next session). Options floated:
-(a) author all scenarios' gameplay now (conditions/items/tactics/choices, canon
-names, no live dialogue vars) and add dialogue vars as the mapping is confirmed —
-**fastest, recommended**; (b) resolve the full mapping first; (c) only the mapped
-scenarios (1,2,4) + secrets + endings, then review pace. Ask the user.
+Authoring conventions (carry forward): per-scenario file = at-a-glance / order of
+battle / buried treasure / walkthrough + `BATTLE FLOW` box / branching dialogue;
+**buried-treasure item rewards are `{{en:fntsys10:N}}` vars** (track the
+translation); cutscene intro is `{{enf:scen{040+2N}:idx}}`. Battle-dialogue vars
+are still **deferred** — wire them per scenario using the `scen{N+1}` battle map
+when desired (and run the patch CHOICE-fit detector then).
 
 ### fntsys10 item-name variables — how indices were resolved
 Item names come from `fntsys10` (177 canonical entries). To get an index: parse
