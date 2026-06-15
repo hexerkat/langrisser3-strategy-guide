@@ -127,9 +127,10 @@ on `meta-guide-choice-qa`, registered in `config/entry-annotations.json`
 (`class=CHOICE`) and guarded by `tests/test_choice_fit.py` + `test_entry_counts`
 + `test_control_code_parity`. See memory `feedback_guide_is_translation_qa`.
 
-**DONE:** every cleanly-locatable love-index/persuasion block is wired (JP
-balizador + live EN) and reviewed. **90 CHOICE entries across 23 scens** registered
-in `config/entry-annotations.json`; ~19 EN choice entries fixed in the patch.
+**DONE:** every cleanly-locatable love-index/persuasion block AND every
+item-trigger (buried-treasure) block is wired (JP balizador + live EN) and
+reviewed. **241 CHOICE entries across 41 scens** registered in
+`config/entry-annotations.json`; ~35 EN choice entries fixed in the patch.
 In-battle: Sc1–36 (incl. all Freya-persuasion blocks). Cutscene/inter: Sc1
 (scen043), Sc7 (scen055), Sc15 (scen071), Sc16 Freya (scen072), Sc18 (scen077),
 Sc19 (scen079), Sc21 truce (scen083), Sc27 (scen094), Sc29 ×2 (scen098), ?1
@@ -151,32 +152,44 @@ grep `何と(答え|話しかけ|言い)` in the JP file; options follow the pro
 To retrofit literals after writing 3-segment `{{jp:scen:idx}}` vars, re-run the
 bake loop (regex `\{\{jp:(scen\w+):(\d+)\}\}` → add `:_flow(jp[idx])`).
 
-### NEXT TASK — item-trigger choice sweep (user-approved, FULL same treatment)
+### Item-trigger choice sweep — DONE (2026-06-15, 4 waves)
 
-The **buried-treasure selection options** (the menu choices the player picks on the
-map to get an item — NOT love-index) get the **same QA pipeline**: JP balizador +
-live EN var in the *Buried treasure* table, EN reviewed/fixed vs JP, registered
-`class=CHOICE`, run choice-fit. ~50 options across ~30 scens + secrets. Today they
-are plain English paraphrases ("Choose 'X'") — not QA'd.
+The **buried-treasure selection options** (map menu choices that grant an item —
+NOT love-index) got the full QA pipeline: JP balizador + live EN var in the
+*Buried treasure* table (rendered `"EN option" (JP balizador)`), EN reviewed/fixed
+vs JP, registered `class=CHOICE`, choice-fit verified. Commits on the patch:
+`b1e79b3` (wave A Sc3–11), `a2d3b2e` (wave B Sc14–24), `e7be892` (wave C Sc25–35),
+`c5d28eb` (wave D secrets ?1–?4); guide mirrors `340d80e`/`e7ae53c`/`d410449`/`cc3437f`.
 
-Per block: (1) **locate** in the battle file (scen002–041; some scen042+) — most use
-the `何と答えますか？` prompt, options follow; cross-ref the 攻略データ buried-item
-choices (`選択肢：X`) + Budianto. (2) **wire** the choice cell as
-`{{jp:scenNNN:idx:LIT}}` + `{{en:scenNNN:idx}}` (reward stays `{{en:fntsys10:N}}`);
-write 3-seg `{{jp:scen:idx}}` then bake. (3) **review EN** — both gates (budget 11
-single-line no `<$FFFC>`, no leading space, FFFD/FFFE parity; natural/faithful/spoken
-punctuation); fix the patch entry on overflow/mistranslation. (4) **register** in
-`config/entry-annotations.json`. (5) **verify** choice-fit + guide build + patch suite
-803. Commit per wave (Sc1–12, 13–24, 25–36, secrets), **each repo from its own dir**
-(don't chain `cd` between repos — it nearly dropped a patch commit once).
+**Battle-file mapping confirmed:** in-game Sc *N* battle = `scen{N+1}` (Sc3→004 …
+Sc36→037). **Secret stages live in scen038(?1)/scen039(?2)/scen040(?3)/scen041(?4)**
+— NOT scen115-121 (the scq*.md header comments mislabel the battle file; the actual
+choice text is in scen038-041, just before the cutscene block scen042+).
 
-Already located (start here to confirm the pipeline): **scen006[135-137]** Devil Axe
-(気になるからだ/何となく/答える必要はない); **scen020[96-98]** Love/Power/Courage
-(愛/力/勇気); **scen034[92-94]** Thor blessing (フレイ/トール/ロキ). Rules: JP =
-truth, romaji = context only; item choices give ITEMS (reward col), not love-index;
-plain ACTIONS ("Bury it", "Stand a unit on it") are NOT menu choices — leave as
-prose; do NOT touch general narration prose (separate task). The full resume prompt
-for this task was handed to the user 2026-06-15.
+**EN fixes made (choice entries only):** overflow refits scen006[135] "It intrigues
+me", scen009[60] "Reach for it", scen010[56] "Open both at once", scen018[74]
+"Hiding in the back", scen019[53/55] "Dig between them"/"Stand between them",
+scen023[77] "Fill your waterskin", scen041[67/68] "Press it again"/"Check its chest",
+scen039[139] "Super Lang added"; mistranslations scen038[164] 放っておく "Shoot at it"
+→ "Leave it alone", scen030[82] 割る "open"→"cracking", scen033[134/142] "Magic power"
+→"Power of Magic" (parallel w/ 剣の力), scen033[135/143] "Despise both"→"Neither",
+scen030[72] "Breath"→"Blow on it", scen040[136] "Umini"→"Uminin" (Cho Aniki canon);
+menu-period normalization on the 6 scen030 options. **Biggest find: scen039[227-236]
+(?2 sacrifice block) was slot-misaligned** — every EN option sat one slot above its
+JP (prompt slot held option text, "Holy Beast" duplicated); rewrote each slot to
+match its JP (entry count + control-code parity preserved, suite stayed green).
+
+**Skipped (no selectable text options — yes/no or spatial, left as prose):** Sc26
+NW/SE crests, Sc8/Sc31/Sc16 yes-no sub-prompts, ?3 18-or-over, ?4 safe code, and
+NPC-action triggers (Dios persuades Ruud). ?5 has no items.
+
+**RESIDUAL (still open, separate categories):** love-index blocks with no `何と`
+prompt — Sc16 present-buying (prep-phase), Sc10 after-battle 5-option, Sc21
+Emerick-near + Tiaris's-father, Sc23 after-battle quarrel, Sc33 confession; and
+secret-stage **story-trigger** convos (scen011 ?2-trigger, scen035 ?4 line). Also a
+general scen prose-polish task (NOT choice-related) is still pending — e.g. the
+scen039 hero-quiz RESULT narrations have a decode bug ("lost 0P" should be "200P");
+out of choice scope, flagged for that pass.
 
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
