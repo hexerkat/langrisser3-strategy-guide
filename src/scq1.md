@@ -42,7 +42,7 @@ into the unknown — and to a legendary beef-bowl shop run in the middle of nowh
 
 | Where | What to do | Reward |
 |---|---|---|
-| Stone pillar jutting out, top-right | Pick "{{en:scen038:166}}" ({{jp:scen038:166:じっと暴つめる}}) | Mercenary Attack +1 |
+| Southeast of the shop — a clearing with a pillar at its centre | Pick "{{en:scen038:166}}" ({{jp:scen038:166:じっと暴つめる}}) | Mercenary Attack +1 |
 | At the counter | Eat gyudon → "{{en:scen038:129}}" ({{jp:scen038:129:全員}}) (1750 P) | All **male** members' Vitality +1 |
 
 ## Walkthrough
