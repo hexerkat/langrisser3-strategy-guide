@@ -29,6 +29,12 @@
     { "file": "sc21.md",                  "title": "Scenario 21 — The Magnificent capital, Larcussia" },
     { "file": "sc22.md",                  "title": "Scenario 22 — To a New Battle" },
     { "file": "sc23.md",                  "title": "Scenario 23 — The Necromancer, Again" },
-    { "file": "sc24.md",                  "title": "Scenario 24 — The Field Marshal's Determination" }
+    { "file": "sc24.md",                  "title": "Scenario 24 — The Field Marshal's Determination" },
+    { "file": "sc25.md",                  "title": "Scenario 25 — Light Over Shadow" },
+    { "file": "sc26.md",                  "title": "Scenario 26 — Suspicion" },
+    { "file": "sc27.md",                  "title": "Scenario 27 — The Shapeshifter Feraquea" },
+    { "file": "sc28.md",                  "title": "Scenario 28 — Demon Defense Force" },
+    { "file": "sc29.md",                  "title": "Scenario 29 — Böser, Master of the Demon Blade" },
+    { "file": "sc30.md",                  "title": "Scenario 30 — Behind the Mask" }
   ]
 }
