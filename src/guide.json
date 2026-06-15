@@ -5,6 +5,12 @@
     { "file": "02-classes.md",            "title": "Classes & Class Change" },
     { "file": "03-heroines.md",           "title": "The Heroine System" },
     { "file": "04-items.md",              "title": "Item List" },
-    { "file": "sc04.md",                  "title": "Scenario 04 — General Geier" }
+
+    { "file": "sc01.md",                  "title": "Scenario 01 — Assault on the Floating Castle" },
+    { "file": "sc02.md",                  "title": "Scenario 02 — Madness in Laffel" },
+    { "file": "sc03.md",                  "title": "Scenario 03 — The Sad-Eyed Master Swordsman" },
+    { "file": "sc04.md",                  "title": "Scenario 04 — General Geier" },
+    { "file": "sc05.md",                  "title": "Scenario 05 — Wily General Emerick" },
+    { "file": "sc06.md",                  "title": "Scenario 06 — Enemies on all Sides" }
   ]
 }
