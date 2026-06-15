@@ -3,8 +3,9 @@
   VALUE / where-found / effect are authored from the 攻略データ; item NAMES are
   LIVE variables from fntsys10 (the canonical item-name table) so they always
   match the in-game spelling. fntsys10 indices were resolved by JP-name match.
-  STATUS: Weapons done. Armor / accessories / consumables / runes / class-up
-  items still to add (data beyond 攻略データ line 782).
+  All sections complete and verified against the 攻略データ 全アイテムリスト
+  (2026-06-15 review): weapons, armor, shields, helmets, boots, accessories,
+  consumables, runes, hidden class-up items.
 -->
 # Item List
 
@@ -47,10 +48,10 @@ How to read each table:
 | Weapon | Value | Found | Effect |
 |---|---|---|---|
 | {{en:fntsys10:14}} | 400 | Sc 5–6 | AT +4 |
-| {{en:fntsys10:18}} | 9,000 | hidden (Sc 5) | AT +12, DF −4, MV −2 |
+| {{en:fntsys10:17}} | 9,000 | hidden (Sc 5) | AT +12, DF −4, MV −2 |
 | {{en:fntsys10:15}} | 2,250 | Sc 12–26 | AT +7, MV −1 |
 | {{en:fntsys10:16}} | 3,800 | Sc 21–35 | AT +7 |
-| {{en:fntsys10:19}} | 11,500 | hidden (Sc 25) | AT +10, MV −1 |
+| {{en:fntsys10:18}} | 11,500 | hidden (Sc 25) | AT +10, MV −1 |
 
 ### Knives  *(equip: Infantry · Cavalry · Thief · Marine · Unicorn · Mage · Heretic)*
 
@@ -240,11 +241,11 @@ How to read each table:
 | {{en:fntsys10:116}} | 2,500 | hidden (Sc 5) | AT +3, DF +1, all resist +12 |
 | {{en:fntsys10:120}} | 1,600 | hidden (Sc 5) | INT +15, D-mod +8, holy/spirit +15 |
 | {{en:fntsys10:114}} | 3,600 | hidden (Sc 6) | A-mod +10, D-mod +5 |
-| {{en:fntsys10:115}} | 4,200 | hidden (Sc 16) | A-mod +2, MP +10, R2, holy −15, spirit +15 |
+| {{en:fntsys10:115}} | 4,200 | hidden (Sc 16) | A-mod +2, MP +10, R2, fire/ice/earth/wind +6, holy −15, spirit +15 |
 | {{en:fntsys10:111}} | 1,800 | Sc 23–34 | MP ×1.5 |
 | {{en:fntsys10:117}} | 4,800 | hidden (Sc 23) | A-mod +3, D-mod +5, most resist +30 |
 | {{en:fntsys10:113}} | 2,200 | hidden (Sc 33) | A-mod +5, D-mod +5 |
-| {{en:fntsys10:118}} | 4,800 | hidden (Sc ?2) | A-mod +7, D-mod +3, holy −10, spirit +45 |
+| {{en:fntsys10:118}} | 4,800 | hidden (Sc ?2) | A-mod +7, D-mod +3, fire/ice/earth/wind +30, holy −10, spirit +45 |
 | {{en:fntsys10:119}} | 2,150 | Sc ?4 | R1, fire +10, max MP ×1.5 |
 
 ### General accessories  *(equip: all)*

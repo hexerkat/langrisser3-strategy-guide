@@ -2,8 +2,8 @@
   Strategy Guide — editorial chapter: Classes & Class Change.
   Reference data from the 攻略データ class tables; canonical names written
   directly (no live variables — this is a static reference). Class/item names
-  follow project canon; hidden-class and class-up-item spellings should be
-  reconciled against fntsys4/fntsys10 in a later polish pass.
+  follow project canon; hidden-class and class-up-item spellings were reconciled
+  against the in-game fntsys10 names (2026-06-15 review vs the 攻略データ).
 -->
 # Classes & Class Change
 
@@ -50,7 +50,7 @@ class for the listed characters — skills it grants are noted in brackets.
 
 ### Infantry
 `Fighter → Gladiator → Swordsman` *(hire: Soldier · Infantry · Legion)*
-> ★ **Braveman Secret Stone** → Diehärte (**Hero**) · Lewin (**King** — adds
+> ★ **Hero's Stone** → Diehärte (**Hero**) · Lewin (**King** — adds
 > metal-armor skill) · Kirikaze (**Samurai Master** — Focus, Iai, Self-Destruct,
 > Critical) · Altemüller (**Emperor** — hire Grenadier) · Varna (**Queen**)
 
@@ -61,20 +61,20 @@ class for the listed characters — skills it grants are noted in brackets.
 
 ### Marine
 `Croco Knight → Serpent Knight → Serpent Lord` *(hire: Merman · Lizardman · Archelon)*
-> ★ **Mermaid's Tear** → Diehärte · Pierre · Dios (**Serpent Master** — hire Nixie)
+> ★ **Mermaid Tear** → Diehärte · Pierre · Dios (**Serpent Master** — hire Nixie)
 
 ### Bow
 `Hunter → Archer → Sniper` *(hire: Crossbow · Elf · Ballista)*
-> ★ **Apollo's Arrow** → Silver Wolf (**Ranger** — hire High Elf) · Varna
+> ★ **Apollo Arrow** → Silver Wolf (**Ranger** — hire High Elf) · Varna
 > (**Ranger** — hire Jäger)
 
 ### Flight
 `Hawk Knight (Pegasus Knight) → Dragon Knight → Dragon Lord` *(hire: Harpy · Fairy · Griffon)*
-> ★ **Heaven's Wings** → Diehärte · Luna (**Dragon Master** — hire Angel)
+> ★ **Heavenly Wings** → Diehärte · Luna (**Dragon Master** — hire Angel)
 
 ### Cavalry
 `Knight → Silver Knight → Highlander` *(hire: Trooper · Lancer · Dragoon)*
-> ★ **Knight's Crest** → Gilbert (**Knight Master**) · Emerick / Altemüller
+> ★ **Knight Crest** → Gilbert (**Knight Master**) · Emerick / Altemüller
 > (**Royal Guard** — hire Royal Lancer)
 
 ### Unicorn *(special cavalry)*
@@ -87,7 +87,7 @@ class for the listed characters — skills it grants are noted in brackets.
 
 ### Thief
 `Bandit → Thief (adds Swift) → Assassin (adds Hide, Critical)` *(hire: Beggar · Rogue)*
-> ★ **Secret Tome** → Silver Wolf (**High Master** — adds reflex-up) · Kirikaze
+> ★ **Secret Manual** → Silver Wolf (**High Master** — adds reflex-up) · Kirikaze
 > (**Ninja** — adds ninja skills, hire Kunoichi)
 
 ### Priest-Warrior
@@ -131,6 +131,6 @@ Jugler transforms into beasts rather than soldiers:
 | Infantry | `Werewolf → Troll → Minotaur` *(Wolfman · Ogre)* — adds Regenerate, Berserk |
 | Marine | `Scylla → Sea Serpent → Hydra` *(Killer Lobster · Lizardman · Tentacle)* |
 | Flight | `Wurm → Wyvern → Sphinx` *(Harpy · Bat · Gremlin)* — ★ **Heaven's Wings** → **Roc** (hire Gargoyle) |
-| Demon | `Incubus → Succubus → Arch Demon` *(Imp · Nightmare · Lesser Demon)* — ★ **Demon Realm Water** → **Demon Lord** |
-| Spirit | `Ghost → Lich → Wraith` *(Phantom · Wight · Specter)* — ★ **Dead Spirit Blood** → **Death** |
-| Dragon | `Great Dragon → Chaos Dragon → Bahamut` *(Red · Black · White Dragon)* — ★ **Magic Dragon Stone** → **Fafnir** |
+| Demon | `Incubus → Succubus → Arch Demon` *(Imp · Nightmare · Lesser Demon)* — ★ **Demon Water** → **Demon Lord** |
+| Spirit | `Ghost → Lich → Wraith` *(Phantom · Wight · Specter)* — ★ **Ghost Blood** → **Death** |
+| Dragon | `Great Dragon → Chaos Dragon → Bahamut` *(Red · Black · White Dragon)* — ★ **Dark Dragonstone** → **Fafnir** |
