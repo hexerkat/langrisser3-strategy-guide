@@ -89,6 +89,23 @@ confirm; answer **yes** at *"{{en:scen107:56}}"* to seal it.
 | {{jp:scen107:45:ソフィア}} | {{en:scen107:45}} |
 | {{jp:scen107:46:フレア}} | {{en:scen107:46}} |
 
+## How your characters are remembered
+
+Whatever ending you reach, the epilogue narrates **what becomes of each
+character** afterward — one rises to a great knight, another to a famed mage,
+and so on. Each fate is decided by that character's record at clear time:
+**final level**, **total enemies defeated**, and **total retreats**. Roughly:
+
+| Their record at clear | Their fate |
+|---|---|
+| Many kills · **zero retreats** | Great deeds — their name lives on in history |
+| Few kills · **zero retreats** | A quiet, peaceful life ever after |
+| Any kills · **one or more retreats** | Dies, or vanishes without a trace |
+| Any kills · **many retreats** | Comes to a wretched end |
+
+So if a character means something to you, **fight hard with them and never let
+them retreat** — that is how you earn them a happy life after the war.
+
 ## After the credits
 
 Once the ending and staff roll finish, **leave the screen alone** — wait without

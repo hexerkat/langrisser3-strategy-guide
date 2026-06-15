@@ -14,8 +14,9 @@ companions from the Langrisser legends.
 ## Unlocking ?2 (during Scenario 10)
 
 After rescuing Sophia: move Diehärte beside **Do Kahni** → "Are your wounds
-healed?"; then beside **Keh Shikairo** → ask about the stone → "it's a star";
-then beside **Sophia** → "fetch the stone"; finally bring **Sophia and Keh
+healed?"; then beside **Keh Shikairo** → ask about the stone (he reveals it is a
+time-crossing relic) → choose **"May I have it"** (2nd option); then beside
+**Sophia** → ask her to **accept the stone**; finally bring **Sophia and Keh
 Shikairo** next to each other.
 
 ## At a glance
