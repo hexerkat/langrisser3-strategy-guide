@@ -213,39 +213,42 @@ bug — a `<$05ED>` number tile supplies the 20-prefix so it renders "200P" in-g
 open. Remaining to ship the guide: GameFAQs 79-col styling + final `.txt` assembly
 into the patch, and a playtest.
 
-## NEXT TASK — full guide review vs the 攻略データ (authoritative cross-check)
+## DONE — full guide review vs the 攻略データ (authoritative cross-check, 2026-06-15)
 
-The `攻略データ` (`/home/ralf/romhack/lang3_local_docs/LANGRISSER III SS の攻略デー
-タです.txt`, 1475 lines) is the authoritative Saturn strategy data. **It was
-under-used** (only its item + love-index sections). Verify the WHOLE guide
-against it, section by section, fixing factual discrepancies (this is QA, same
-spirit as the love-index audit that caught the Ｒ/Ｌ mix-ups). **JP `攻略データ`
-is authority; the patch + font are 100% OURS (built from the JP ISO) — never say
-"CWX", and inherited quirks need not be preserved (e.g. the `<$05ED>0P` number
-tile was switched to ASCII `200P`).**
+The whole guide was cross-checked section-by-section against the `攻略データ`
+(`/home/ralf/romhack/lang3_local_docs/LANGRISSER III SS の攻略データです.txt`,
+1475 lines). Result: the guide was already very accurate; a small set of real
+factual fixes (commits below). **No patch EN entries needed changing** — the
+in-game fntsys10 item names were all correct; the guide had pointed at wrong
+indices / used stale static names. Patch suite stayed 803 green, untouched.
 
-**攻略データ section map (line → guide target):**
-- L10 キャラクターメイク・フロー (creation quiz Q1–27 + class outcomes) → `src/01-character-creation.md`
-- L187 クラスチェンジ一覧 (per-character class table) → `src/02-classes.md`
-- L218 クラスアップ一覧 + L227–~390 ＊隠しクラスアップアイテム (class-up paths, hireable mercs, hidden class-up items) → `src/02-classes.md` (+ `04-items.md`)
-- L393 ヒロインシステム攻略 (love-index) → **DONE/verified** (effects locked to this list)
-- L653 全アイテムリスト (every item: name / VALUE / 入手面 / effect) → `src/04-items.md`
-- L972 隠しアイテム入手法 (buried items per scenario 1–36 + ?1–?5) → each `src/scNN.md`/`scqN.md` **Buried treasure** table. CHOICE rows DONE; **non-choice rows NOT yet cross-checked** (locations, vault contents, "rescue all villagers"-type rewards, item names).
-- L1197 召喚魔獣データ (summon-beast data) → not currently in the guide (decide if worth a section).
-- L1263 隠しシナリオへの道 (secret-stage unlock routes) → `scqN.md` unlock boxes + host-scenario triggers.
-- L1319 真のエンディングへの道 (true-ending conditions, Sc34 steps) + キャラクターの活躍度 (ending fate by stats) → `src/endings.md`.
-- L1371 知っていると得する情報 / 裏ワザ (scenario select, hidden shop, sound test, free-talk, Hero Select, NG+) → `src/cheats.md`.
+**Findings & fixes (all in the guide repo):**
+- **Buried items (L972)** — `8e02582`. Every Sc1–36 + ?1–?5 Buried-treasure table
+  (choice AND non-choice rows) verified. One fix: Stage ?1's first item is
+  **southeast** of the gyudon shop (牛丼屋南東), not "top-right".
+- **Creation quiz (L10)** — verified **100% clean**, all 27 questions: per-level
+  unit type, every stat/skill/item/affinity outcome, and branch destinations.
+- **Class + item list (L187/L218/L653)** — `5cc34b7`. Class tables structurally
+  exact. Fixed: axe table had **swapped fntsys10 indices** (Devil Axe :18→:17,
+  Rune Axe :19→:18 — they were rendering "Rune Axe" / "Knife"); Immortal Crest &
+  Blood Pact were **missing their fire/ice/earth/wind resist**; Sc15 seed bundle
+  now uses live vars; **9 hidden-class-up item names** in `02-classes.md`
+  reconciled to in-game fntsys10 spelling.
+- **Secret routes + ending + cheats (L1263/L1319/L1371)** — `4361e6a`. ?3/?4/?5
+  unlock routes matched. Fixed ?2 (the Keh Shikairo stone step said "it's a
+  star" → it's a time-crossing relic, required choice **"May I have it"**, per
+  scen011) and the Sc4 after-battle tease label (**Tiaris**, not Liffany). Added
+  **キャラクターの活躍度** (post-game fate by level/kills/retreats) to `endings.md`.
+  cheats.md button codes verified exact.
+- **Love-index (L393)** — already DONE in the prior session (R/L mix-ups fixed).
+- **召喚魔獣データ (L1197, summon-beast list)** — still NOT in the guide. Optional
+  niche section (the 攻略データ itself calls summon magic "almost useless" thanks
+  to Chain Magic). Leave out unless the user wants it.
 
-**Method per section:** read the 攻略データ block + the matching guide chapter;
-compare every fact (item name/value/location, condition, reward, step, class
-path); fix guide prose/tables and, where it's a live var, the patch EN entry.
-Names → `reference_names_terms_canon`; numbers in prose spelled out
-([[feedback_numbers_spelled_out_in_prose]]); fractions → direct %
-([[feedback_no_fraction_multipliers]]). Enemy rosters / battle tactics are NOT in
-the 攻略データ (those came from Budianto/playthrough) — don't try to verify those
-against it. Commit per section, **each repo from its own dir** (don't chain `cd`).
-Suggested order: buried-items non-choice sweep (biggest factual surface) →
-creation quiz → class data → item list → secret routes → true ending → cheats.
+**Also surfaced (out of scope, handed to a separate agent):** the live JP scripts
+have a systematic **見 → 暴** decode-table label error (334× 暴, 0× 見 in
+`scripts/jp/`; e.g. 見守って→暴守って, 見つめる→暴つめる). EN content is unaffected.
+Belongs to the patch repo's JP decode / font CSV with its own TDD guard.
 
 ## Memory pointers
 `project_strategy_guide_repo` (separate-repo decision), `reference_scenario_file_mapping`,
