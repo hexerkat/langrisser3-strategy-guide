@@ -8,9 +8,43 @@ The Strategy Guide is its **own repo/project** (this one). The English-patch rep
 ships **only the compiled `.txt`** later. Systemic chapters are **done** and the
 **Walkthrough is now complete**: all **36 scenarios + secret stages ?1–?5 +
 endings/best-ending route + secrets/cheats appendix** (build = 3393 lines, suite
-green, zero unresolved vars). **Next: the GameFAQs plain-text styling pass**
-(79-col ASCII: TOC, anchors, dividers), then assemble the final `.txt` into the
-patch repo.
+green, zero unresolved vars). The guide is **reordered** (Character Creation →
+walkthrough with secret stages inline → Endings → reference appendices) and a
+**self-contained HTML export** exists (`tools/md_to_html.py` →
+`build/langrisser3-guide.html`, best for on-screen reading).
+
+**NEXT DELIVERABLE — wire the CHOICE rules into layout-QA + the fitting skill** so
+the guide closes the loop on text quality (see the dedicated section below).
+*(Deferred: GameFAQs 79-col plain-text styling + assembling the `.txt` into the
+patch repo.)*
+
+## NEXT DELIVERABLE — wire CHOICE rules into layout-QA + fitting skill
+
+Make CHOICE entries (player-facing menu options) a first-class concern of the
+tooling **and** the skill, and use the guide's choice tables as the editorial QA
+surface — so the guide actively drives translation quality.
+
+**Grounded state (verified 2026-06-15):**
+- `tools/layout_qa/choices.py` already implements `analyze_choice_fit(scen_id, en_dir, jp_dir, overrides, annotations)` → issues `choice_overflow` / `choice_multiline`. **Budget = (resolved balloon width) − 1 cursor tile** (`CURSOR_TILES=1`); single line, no `<$FFFC>`; width via `simulator.iter_tiles` (real tile cost). Profile geometry parsed from name `_<W>X<L>` (DIALOGUE_12X4→11; NARRATION_16X5→15).
+- Oracle for WHICH entries are choices = `config/entry-annotations.json` (JP-anchored; `class=="CHOICE"`; `$`-keys are comments). 284 CHOICE / 45 scens; "guide-derived" (built from 攻略データ + Budianto + the guide).
+- **The gap:** it's wired ONLY into `tests/test_choice_fit.py` (synthetic detector fixture + live ratchet `test_live_annotated_choices_all_fit`). It is NOT in `tools/layout_qa/cli.py` — so `cli analyze scenNNN` / `--all` do NOT surface choice issues today.
+
+**Plan (do in this order — risk-ascending):**
+1. **Skill (docs, no code risk) — FIRST.** Add a "Choices (player-facing options)" section to `langrisser_layout_fitting_skill.md`: *technical* (budget = balloon width − 1 cursor; single line; NO `<$FFFC>`; overflow spills into the next option's slot; identify via the JP-anchored registry — choices are invisible plain `<$FFFE>`); *editorial* (a choice is the player's voice — punchy, in-character, unambiguous; cross-check **JP balizador ↔ EN ↔ effect**; the love-index effect disambiguates intent; never paraphrase from Budianto; the editorial-regression guard applies).
+2. **layout-QA — wire choices into `cli analyze` (TDD).** Load `entry-annotations.json` + `layout-overrides.json`, run `analyze_choice_fit` per scen, merge `choice_overflow`/`choice_multiline` into each entry's `issues`/`status` and the corpus tally (so `analyze`, `--all`, and `query issue choice_overflow` report them). RED→GREEN: add a test that `cli analyze` surfaces the same issues the detector finds; keep the live ratchet green.
+3. **Guide = editorial QA worksheet (+ optional report tool).** The `| JP (balizador) | EN | Effect |` tables ARE the review surface (how "Sounds delicious", "There's that stone", and the "Smile for me" regression were caught); the build-time balizador assertion (literal == live JP) keeps the pairing honest. OPTIONAL: turn the 192-pair JP↔EN dump into a repeatable command so per-choice review is one invocation.
+
+**The loop:** registry marks the choice → guide renders JP↔EN↔effect → eyeball → fix patch EN → guide auto-updates (var) → layout-QA enforces the budget still fits (ratchet green).
+
+**Canon:** JP = source of truth; names per `names-and-terms.md` (canonical glossary, now `.md`, linked from the skill); editorial-regression guard (don't literalize deliberate localizations — Tiaris "smile" case); commit per repo from its own dir; no push.
+
+### Session accomplishments feeding this (2026-06-15)
+- Full guide review vs `攻略データ` (commits `8e02582`, `5cc34b7`, `4361e6a`).
+- JP **decode-table fix merged** into the patch (`fad7b72`; 313 見/etc. recovered); guide balizadors re-paired (`7962ad8`); patch suite **813**.
+- Choice-translation QA: **5 EN fixes** (`9e4fad2`); scen043 "Smile for me" **reverted** as a localization (`7228865`).
+- Names canonized (Coty/Feraquea/Grove/Keh Shikairo/Laffel/Worm Master Rag; **Elwin/Cherie** adopted, `472da8b` + guide `849a652`/`aa044a2`).
+- Glossary moved `.txt`→**`names-and-terms.md`**, linked from the skill; **editorial-regression guard** added to the skill.
+- Guide reordered (`490f3c7`, `315310a`) + HTML export tool (`c896437`).
 
 ### Scenario→file mapping (resolved — was the old blocker)
 - **Cutscene intro** = `scen{040 + 2N}` for in-game Scenario N (Sc1→042 … Sc36→112;
