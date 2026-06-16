@@ -282,8 +282,14 @@ cell verified correct as-is. Patch `deb6138`/`8b93527`, guide `b94d4ad`/`9110533
 Total now **284 CHOICE entries / 45 scens**; love-index accuracy is locked to the
 攻略データ.
 
-**STILL OPEN (separate categories, not placeholders):** secret-stage **story-trigger**
-convos (scen011 ?2-trigger, scen035 ?4 line). **scen039 layout-fitting polish DONE
+**Story-trigger reply blocks — CLOSED (2026-06-16, patch).** The previously-open
+secret-stage convos are now registered + fit-checked in the patch: scen011 Do
+Kahni reply + the time-crossing stone (`欲しいと言う` = the ?2 trigger), scen035
+post-battle reply, and a 4th surfaced by the closing sweep — scen040 ?3 Dios
+posing reply (`どう答えますか`). One overflow refit (scen011 'Your wounds healed?').
+A corpus guard now asserts EVERY 何と/どう答えますか prompt has its first option
+registered (33/33). Total **297 CHOICE / 47 scens**; patch commits `8ae3d3f`
++ `d5de3d7`. **scen039 layout-fitting polish DONE
 2026-06-15**: 100% POLISHED (304/304, 0 errors), numbers spelled out in prose,
 "Super Lang" → "Super Langrisser". NOTE: the "lost 0P → 200P" I'd flagged is NOT a
 bug — a `<$05ED>` number tile supplies the 20-prefix so it renders "200P" in-game
