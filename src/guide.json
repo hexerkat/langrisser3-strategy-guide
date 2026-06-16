@@ -50,6 +50,8 @@
     { "file": "03-heroines.md",           "title": "The Heroine System" },
     { "file": "02-classes.md",            "title": "Classes & Class Change" },
     { "file": "04-items.md",              "title": "Item List" },
-    { "file": "cheats.md",                "title": "Secrets & Cheats" }
+    { "file": "cheats.md",                "title": "Secrets & Cheats" },
+
+    { "file": "sources.md",               "title": "Sources & Acknowledgements" }
   ]
 }
