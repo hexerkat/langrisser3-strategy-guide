@@ -15,8 +15,14 @@ walkthrough with secret stages inline → Endings → reference appendices) and 
 
 **CHOICE rules wired into layout-QA + the fitting skill — DONE (2026-06-15).** The
 guide now closes the loop on text quality (see the dedicated section below).
-**NEXT:** GameFAQs 79-col plain-text styling + assembling the `.txt` into the patch
-repo (deferred section further down).
+**Sources & Acknowledgements appendix — DONE (2026-06-16):** `src/sources.md`
+credits Budianto + the JP `攻略データ` and states the canon.
+**NEXT (decided with the user 2026-06-16): ship as HTML, deferred.** Final format
+is the **self-contained HTML** (`tools/md_to_html.py`), NOT the GameFAQs 79-col
+text pass (dropped). Destination = a **top-level `strategy-guide/` directory in the
+patch repo**. The compile + assembly is **deferred until after the patch's 100%
+polish pass**, because the guide quotes LIVE in-game text (`{{en:…}}` vars) and the
+polish will rewrite ~2,170 entries — compiling now would ship stale quotes.
 
 ## DELIVERABLE DONE — CHOICE rules wired into layout-QA + fitting skill (2026-06-15)
 
@@ -137,15 +143,19 @@ python3 -m pytest tests/ -q                                              # 5 tes
 | `src/endings.md` | ✅ normal vs true ending, best-ending recipe, Freya checklist, heroine choice |
 | `src/cheats.md` | ✅ secrets & cheats appendix (hidden shop, scenario-select, MP bug, infinite-P, …) |
 
-## NEXT SESSION — GameFAQs styling pass + assembly
+## NEXT — HTML compile + assembly into the patch (DEFERRED to post-polish)
 
-The content is done; what remains is **presentation**:
-1. **GameFAQs plain-text styling pass** — convert the assembled markdown to 79-col
-   ASCII (a numbered TOC with `[xx]` anchors, section dividers, ASCII tables/boxes).
-   Decide whether to extend the generator with a `--gamefaqs` text renderer or add
-   a post-processor; keep the live-var substitution intact.
-2. **Assemble + hand off the `.txt`** into the patch repo (the patch ships only the
-   compiled result). Confirm the destination path with the user.
+The content is done; what remains is **presentation + delivery**, and it is
+**deliberately deferred until the patch's 100% polish pass is finished** (the guide
+quotes live in-game text via `{{en:…}}` vars; polishing rewrites ~2,170 entries, so
+any compile now would ship stale quotes). When that lands:
+1. **Compile the HTML** — `tools/md_to_html.py build/langrisser3-guide.txt -o
+   build/langrisser3-guide.html --title "…"` (self-contained, on-screen reading).
+   The GameFAQs 79-col plain-text pass is **dropped** (HTML chosen by the user).
+2. **Assemble into the patch** — drop the compiled HTML into a **top-level
+   `strategy-guide/` directory** in the patch repo (the patch ships only the
+   compiled result; the generator + `src/` stay here). Add a short README there.
+3. **Playtest** — read through once with the live vars to confirm accuracy.
 
 Authoring conventions (carry forward): per-scenario file = at-a-glance / order of
 battle / buried treasure / walkthrough + `BATTLE FLOW` box / branching dialogue;
@@ -167,9 +177,10 @@ resolved manually against `fntsys10E.txt`. Reuse this for any new item refs.
   (Diehärte, Liffany, Luna, Sophia, Freya, Lewin, Gilbert, Pierre, Geier,
   Emerick, Altemüller, Varna, Jugler, Fauvel, Jessica, Kirikaze, Do Kahni, Dios).
 - Fractions → direct % per project canon (e.g. Star Earring "−25% MP", not ×3/4).
-- **GameFAQs plain-text styling is deferred to the END** (user). Author content in
-  markdown now; the final pass converts to 79-col ASCII (TOC, anchors, dividers)
-  and assembles the `.txt` that goes into the patch repo.
+- **Final format = self-contained HTML** (`tools/md_to_html.py`), chosen by the
+  user 2026-06-16; the GameFAQs 79-col ASCII pass is dropped. Author content in
+  markdown now; compile the HTML and drop it into the patch's top-level
+  `strategy-guide/` dir **after** the 100% polish pass freezes the in-game text.
 
 ## Source files (local, read-only)
 - Budianto walkthrough: `/home/ralf/romhack/lang3_local_docs/stragegy_guide.txt`
