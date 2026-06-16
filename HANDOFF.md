@@ -13,16 +13,47 @@ walkthrough with secret stages inline → Endings → reference appendices) and 
 **self-contained HTML export** exists (`tools/md_to_html.py` →
 `build/langrisser3-guide.html`, best for on-screen reading).
 
-**NEXT DELIVERABLE — wire the CHOICE rules into layout-QA + the fitting skill** so
-the guide closes the loop on text quality (see the dedicated section below).
-*(Deferred: GameFAQs 79-col plain-text styling + assembling the `.txt` into the
-patch repo.)*
+**CHOICE rules wired into layout-QA + the fitting skill — DONE (2026-06-15).** The
+guide now closes the loop on text quality (see the dedicated section below).
+**NEXT:** GameFAQs 79-col plain-text styling + assembling the `.txt` into the patch
+repo (deferred section further down).
 
-## NEXT DELIVERABLE — wire CHOICE rules into layout-QA + fitting skill
+## DELIVERABLE DONE — CHOICE rules wired into layout-QA + fitting skill (2026-06-15)
 
-Make CHOICE entries (player-facing menu options) a first-class concern of the
-tooling **and** the skill, and use the guide's choice tables as the editorial QA
+Made CHOICE entries (player-facing menu options) a first-class concern of the
+tooling **and** the skill, with the guide's choice tables as the editorial QA
 surface — so the guide actively drives translation quality.
+
+**What shipped:**
+- **Skill** (Layer 1) — `langrisser_layout_fitting_skill.md` gained a **"Choices
+  (player-facing menu options)"** section (technical: budget = balloon width − 1
+  cursor, single line, NO `<$FFFC>`, overflow spills into the next slot, identify
+  via the JP-anchored registry; editorial: a choice is the player's voice — punchy,
+  in-character, unambiguous; cross-check JP balizador ↔ EN ↔ effect; never
+  paraphrase Budianto; regression guard applies). Both choice codes added to the
+  skill's issue-code table.
+- **layout-QA** (Layer 2) — patch commit `9dc61ab`: `analyze_choice_fit` is wired
+  into `cli analyze` (new `--annotations` flag, defaults to
+  `config/entry-annotations.json`). `choice_overflow` / `choice_multiline` now fold
+  into each entry's `issues`/`status`, the corpus `byIssue` tally, `query issue`,
+  `query catalog`, and the exit code. Registered in `ISSUE_CODES`,
+  `READINESS_BLOCKERS`, the 0.3.1 JSON Schema, and `types/layout-qa.ts`. TDD:
+  cli-level tests in `test_choice_fit.py`; catalog pinned to 13 codes. **Patch
+  suite 816 green**; real-corpus `analyze --all` clean (284 annotated choices, 0
+  choice errors, playability still 100%).
+- **Guide as worksheet** (Layer 3) — already in place and unchanged: the
+  `| JP (balizador) | EN | Effect |` tables ARE the editorial review surface (how
+  "Sounds delicious", "There's that stone", and the "Smile for me" regression were
+  caught), kept honest by the build-time balizador assertion (literal == live JP).
+  A standalone "choice QA report" command was judged **redundant** with these
+  tables and **not built** (offer stands if a guide-independent dump is ever
+  wanted).
+
+**The loop (now fully enforced):** registry marks the choice → guide renders
+JP↔EN↔effect → eyeball → fix patch EN → guide auto-updates (var) → layout-QA
+enforces the budget still fits (`cli analyze` + ratchet green).
+
+<details><summary>Original grounded state + plan (for reference)</summary>
 
 **Grounded state (verified 2026-06-15):**
 - `tools/layout_qa/choices.py` already implements `analyze_choice_fit(scen_id, en_dir, jp_dir, overrides, annotations)` → issues `choice_overflow` / `choice_multiline`. **Budget = (resolved balloon width) − 1 cursor tile** (`CURSOR_TILES=1`); single line, no `<$FFFC>`; width via `simulator.iter_tiles` (real tile cost). Profile geometry parsed from name `_<W>X<L>` (DIALOGUE_12X4→11; NARRATION_16X5→15).
@@ -37,6 +68,8 @@ surface — so the guide actively drives translation quality.
 **The loop:** registry marks the choice → guide renders JP↔EN↔effect → eyeball → fix patch EN → guide auto-updates (var) → layout-QA enforces the budget still fits (ratchet green).
 
 **Canon:** JP = source of truth; names per `names-and-terms.md` (canonical glossary, now `.md`, linked from the skill); editorial-regression guard (don't literalize deliberate localizations — Tiaris "smile" case); commit per repo from its own dir; no push.
+
+</details>
 
 ### Session accomplishments feeding this (2026-06-15)
 - Full guide review vs `攻略データ` (commits `8e02582`, `5cc34b7`, `4361e6a`).
