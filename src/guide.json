@@ -2,20 +2,19 @@
   "title": "Langrisser III (Saturn) — Strategy Guide",
   "chapters": [
     { "file": "01-character-creation.md", "title": "Character Creation" },
-    { "file": "02-classes.md",            "title": "Classes & Class Change" },
-    { "file": "03-heroines.md",           "title": "The Heroine System" },
-    { "file": "04-items.md",              "title": "Item List" },
 
     { "file": "sc01.md",                  "title": "Scenario 01 — Assault on the Floating Castle" },
     { "file": "sc02.md",                  "title": "Scenario 02 — Madness in Laffel" },
     { "file": "sc03.md",                  "title": "Scenario 03 — The Sad-Eyed Master Swordsman" },
     { "file": "sc04.md",                  "title": "Scenario 04 — General Geier" },
+    { "file": "scq1.md",                  "title": "Stage ?1 — Hidden Gyudon Restaurant" },
     { "file": "sc05.md",                  "title": "Scenario 05 — Wily General Emerick" },
     { "file": "sc06.md",                  "title": "Scenario 06 — Enemies on all Sides" },
     { "file": "sc07.md",                  "title": "Scenario 07 — Mountain Pass Reunion" },
     { "file": "sc08.md",                  "title": "Scenario 08 — The Southern Lushiris Gate" },
     { "file": "sc09.md",                  "title": "Scenario 09 — Shaman Attack" },
     { "file": "sc10.md",                  "title": "Scenario 10 — Ceremony of Scorching Heat" },
+    { "file": "scq2.md",                  "title": "Stage ?2 — Successive Heroes" },
     { "file": "sc11.md",                  "title": "Scenario 11 — Deception" },
     { "file": "sc12.md",                  "title": "Scenario 12 — The Wise Sage Fauvel" },
     { "file": "sc13.md",                  "title": "Scenario 13 — To Hunt a Holy Beast" },
@@ -31,8 +30,10 @@
     { "file": "sc23.md",                  "title": "Scenario 23 — The Necromancer, Again" },
     { "file": "sc24.md",                  "title": "Scenario 24 — The Field Marshal's Determination" },
     { "file": "sc25.md",                  "title": "Scenario 25 — Light Over Shadow" },
+    { "file": "scq5.md",                  "title": "Stage ?5 — Tale of a Gell Family" },
     { "file": "sc26.md",                  "title": "Scenario 26 — Suspicion" },
     { "file": "sc27.md",                  "title": "Scenario 27 — The Shapeshifter Feraquea" },
+    { "file": "scq3.md",                  "title": "Stage ?3 — The Queen and Aesthetic Men" },
     { "file": "sc28.md",                  "title": "Scenario 28 — Demon Defense Force" },
     { "file": "sc29.md",                  "title": "Scenario 29 — Böser, Master of the Demon Blade" },
     { "file": "sc30.md",                  "title": "Scenario 30 — Behind the Mask" },
@@ -41,15 +42,14 @@
     { "file": "sc33.md",                  "title": "Scenario 33 — Unwavering Loyalty" },
     { "file": "sc34.md",                  "title": "Scenario 34 — The Shape of a Heart" },
     { "file": "sc35.md",                  "title": "Scenario 35 — The True Enemy" },
+    { "file": "scq4.md",                  "title": "Stage ?4 — The Mightiest Foe" },
     { "file": "sc36.md",                  "title": "Scenario 36 — The Birth of a Legend" },
 
-    { "file": "scq1.md",                  "title": "Stage ?1 — Hidden Gyudon Restaurant" },
-    { "file": "scq2.md",                  "title": "Stage ?2 — Successive Heroes" },
-    { "file": "scq3.md",                  "title": "Stage ?3 — The Queen and Aesthetic Men" },
-    { "file": "scq4.md",                  "title": "Stage ?4 — The Mightiest Foe" },
-    { "file": "scq5.md",                  "title": "Stage ?5 — Tale of a Gell Family" },
-
     { "file": "endings.md",               "title": "Endings & the Best-Ending Route" },
-    { "file": "cheats.md",                "title": "Secrets & Cheats" }
+    { "file": "cheats.md",                "title": "Secrets & Cheats" },
+
+    { "file": "03-heroines.md",           "title": "The Heroine System" },
+    { "file": "02-classes.md",            "title": "Classes & Class Change" },
+    { "file": "04-items.md",              "title": "Item List" }
   ]
 }
