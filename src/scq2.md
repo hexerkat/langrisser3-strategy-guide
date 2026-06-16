@@ -1,6 +1,6 @@
 <!--
   Walkthrough — Secret Stage ?2 (cutscene scen116, battle scen117). Unlocked from Scenario 10.
-  Cameo heroes of Langrisser I & II. Canon script spellings: Ledin, Erwin.
+  Cameo heroes of Langrisser I & II. Canon script spellings: Ledin, Elwin.
 -->
 # Stage ?2 — Successive Heroes
 *The heroes of legend, summoned by a wandering stone*
@@ -8,7 +8,7 @@
 > {{enf:scen116:19}}
 
 A Time-and-Space Warping Stone, given long ago by the Great Sage, pulls Diehärte
-into a clash with the **heroes of ages past** — Ledin, Erwin and their famous
+into a clash with the **heroes of ages past** — Ledin, Elwin and their famous
 companions from the Langrisser legends.
 
 ## Unlocking ?2 (during Scenario 10)
@@ -23,14 +23,14 @@ Shikairo** next to each other.
 
 | | |
 |---|---|
-| **Victory** | Defeat **Ledin and Erwin** |
+| **Victory** | Defeat **Ledin and Elwin** |
 | **Defeat** | Diehärte falls |
 
 ## Order of battle
 
 | Side | Units |
 |---|---|
-| **Enemy** | **Ledin (Lv 33)** · **Erwin (Lv 34)** · Chris (Lv 27) · Narm (Lv 27) · Sherry (Lv 28) · Liana (Lv 28) |
+| **Enemy** | **Ledin (Lv 33)** · **Elwin (Lv 34)** · Chris (Lv 27) · Narm (Lv 27) · Cherie (Lv 28) · Liana (Lv 28) |
 
 ## Buried treasure
 
@@ -41,21 +41,21 @@ Shikairo** next to each other.
 | — | Defeat **all enemies** | {{en:fntsys10:147}} |
 
 ### The heroes' questions (lore Easter egg)
-Answer "yes" to the *"can't you get a date?"* prompt near Ledin/Erwin, then
+Answer "yes" to the *"can't you get a date?"* prompt near Ledin/Elwin, then
 approach each hero for a question:
 
 | Hero | Answer (JP balizador / in-game EN) | Reward |
 |---|---|---|
 | Ledin | {{jp:scen039:138:補助魔法ができた}} / "{{en:scen039:138}}" | 500 P |
-| Sherry | {{jp:scen039:214:カルザス}} / "{{en:scen039:214}}" | Power Fruit |
+| Cherie | {{jp:scen039:214:カルザス}} / "{{en:scen039:214}}" | Power Fruit |
 | Chris | {{jp:scen039:150:レディンと結婚した}} / "{{en:scen039:150}}" | Cross |
-| Erwin | {{jp:scen039:190:ベルンハルト}} / "{{en:scen039:190}}" | Valor Seed |
+| Elwin | {{jp:scen039:190:ベルンハルト}} / "{{en:scen039:190}}" | Valor Seed |
 | Narm | {{jp:scen039:167:ランス}} / "{{en:scen039:167}}" | Wisdom Fruit |
 | Liana | {{jp:scen039:202:アルハザードと共に消滅}} / "{{en:scen039:202}}" | Guard Fruit |
 
 ## Walkthrough
 
-**Ledin and Erwin fight each other** at the start. You may let the legends settle
+**Ledin and Elwin fight each other** at the start. You may let the legends settle
 it themselves, or take them all on. On the first encounter they speak: choosing
 the **1st option** makes them ally *against you* (and opens the items above); the
 **2nd** forces you to bench two of your own — who stay hostile.
