@@ -35,8 +35,8 @@ gate to the **best ending**.
 | Scenario | Situation → pick | Effect |
 |---|---|---|
 | After Sc. 1 | Mourning her father at the fallen castle: ○ *"Gerold…"* · × *show a smile* · × *we're moving out* | ○ / × |
-| Sc. 3 | Gilbert attacks Grob | ○ |
-| Sc. 3 | Attacking Koti, or Tiaris starting the fight | × |
+| Sc. 3 | Gilbert attacks Grove | ○ |
+| Sc. 3 | Attacking Coty, or Tiaris starting the fight | × |
 | After Sc. 4 | Teased about sending the citizens west: bristle / apologize plainly / × sulk | × on sulk |
 | Sc. ?2 start | "You wished everyone else were a girl, didn't you?": × *that's right* · *it's your imagination* | × |
 | Sc. 11 | Sacrificing her at the hidden-item spot | × |
@@ -62,7 +62,7 @@ gate to the **best ending**.
 | " | Struggling/dragging a battle out | × |
 | Sc. 5 | Let the ambush appear first (don't cross the central ridge) and keep her alive | ○ |
 | After Sc. 7-T1 | On breakthrough tactics: × *that's not so* · ○ *that's the plan* · *understood* | ○ / × |
-| Sc. 11 | After Ferakia appears, on her missing the ambush: ○ *don't worry* · × *someone like you, troubled?* | ○ / × |
+| Sc. 11 | After Feraquea appears, on her missing the ambush: ○ *don't worry* · × *someone like you, troubled?* | ○ / × |
 | After Sc. 15 | On her Dark-Knight feint plan: × *obviously* · ○ *as expected of you* | ○ / × |
 
 > Luna's praise (○) only triggers in Scenarios 5–30, so chase clean, fast clears
@@ -74,7 +74,7 @@ gate to the **best ending**.
 |---|---|---|
 | Any | If victory ISN'T "rout all enemies," wiping out every (human) enemy anyway → *"You didn't have to annihilate them…"* | × |
 | After Sc. 10 rescue | On her healing an enemy: × *no mercy for foes* · ○ *that's kind of you* | ○ / × |
-| Sc. 10 | Diehärte approaches her (asking to persuade Kee Shikairo): ○ *to protect you* | ○ |
+| Sc. 10 | Diehärte approaches her (asking to persuade Keh Shikairo): ○ *to protect you* | ○ |
 | Sc. 12 | Worried for her endangered father: ○ *it'll be fine* · × *this is grim…* | ○ / × |
 | Sc. 23 | Anxious over villagers cornered to the west: × *what do we do* · ○ *it'll be fine* | ○ / × |
 
@@ -90,7 +90,7 @@ index.
 | Sc. 7 | Approach with Diehärte → talk (persuade); let her attack Diehärte → talk (persuade); don't attack her (×); don't leave only her (×) |
 | After Sc. 7 | Childhood flashback "won't we meet again?": ○ *I'm sorry* · × *that's right* |
 | Sc. 14 | Approach: *sheathe your sword, Freya* (persuade); when only she remains: *ask why she fights* (persuade); don't attack her (×) |
-| Sc. 16 start | Why come to Rafael alone?: ○ *to see you* · × *to fight the Dark Knight* |
+| Sc. 16 start | Why come to Laffel alone?: ○ *to see you* · × *to fight the Dark Knight* |
 | Sc. 17 | Approach: *tell me your troubles!* (persuade); she attacks you: ○ *I don't want to fight you* · ×× *don't give up*; on defeating her: ○ *why go this far…* |
 | Sc. 31 | Diehärte persuades her — if every persuasion was taken and her index is high enough, she **joins** |
 | Sc. 32 | On King Wilder's madness: ○ *there must be a reason*; near Wilder: ○ *…is it alright?* |
@@ -107,16 +107,16 @@ index.
 | After Sc. 10 | On Sophia joining: *all go!* (Ti ○) · *don't overdo it, Sophia* (Ti·So ○) · *I count on Sophia* (Li·So ○) · *say nothing* (all ×) |
 | Sc. ?2 | If you pick "fight with 3," the benched characters take × |
 | After Sc. 13 | Who gets the Sword of Decimation: Tiaris (Ti ○) · Liffany (Li·Lu ○) · Luna (Lu ○) · Sophia (So ○) · Layla (all ×) |
-| Before Sc. 16 | Buy a present in Rafael: chosen heroine ◎, others × · don't buy (Fr ○) |
+| Before Sc. 16 | Buy a present in Laffel: chosen heroine ◎, others × · don't buy (Fr ○) |
 | After Sc. 18 | Rescue vs. wipe the foe (Luna urges wipe): *think of Lewin* (Lu·So ×) · *it can't be helped…* (Ti·Li·So ○) · *you're right* (So ○, Li ×) |
 | After Sc. 19 | Raymond rescue plan: *leave it to me!* (Ti·Li ○, Lu ×) · *it'll be fine* (Lu·So ○) · *just try* (all ×) |
 | Sc. 19 | Pick *Love* at the hidden-item spot | all ○ |
 | Sc. 21 | Emerick: *a fine end* (Li·Lu ○) · say nothing · *an easy foe* (all ×) |
 | After Sc. 21 | On the truce talks: *agree* (Lu·So ○) · *oppose* (Ti·Li ○) · *unsure* (all ×) |
-| Sc. 23 | Gilbert attacks Grob (all ○); Gilbert defeated (all ×) |
+| Sc. 23 | Gilbert attacks Grove (all ○); Gilbert defeated (all ×) |
 | After Sc. 23 | Whose side in the quarrel: Tiaris/Liffany/Sophia (that one ○) · leave it to Luna (all ×) |
 | Sc. 24 | Altemüller's truce: *accept* (Ti ×) · *fight on* (Ti ○, Lu·So ×) · *say nothing* |
-| Sc. 26 / 27 | Kirikaze attacks Ferakia (all ○); Kirikaze defeated (all ×) |
+| Sc. 26 / 27 | Kirikaze attacks Feraquea (all ○); Kirikaze defeated (all ×) |
 | Before Sc. 27 | On the ambush warning: *we'll be fine* (Ti·Li ○) · *stay sharp* (Lu·So ○) · *we might fail* (Ti·Li·Lu ×) |
 | Sc. 28 | Gilbert defeated (all ×) |
 
