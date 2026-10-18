@@ -29,7 +29,8 @@ into the unknown, and to a legendary beef-bowl shop in the middle of nowhere.
 | | |
 |---|---|
 | **Victory** | Get **every member into the restaurant** |
-| **Defeat** | Any member dies · fail to order within **20 turns** |
+| **Victory (alt.)** | Defeat every Gel Gazer |
+| **Defeat** | Any member dies · the restaurant stops taking orders on **turn 21** |
 
 ## Order of battle
 
@@ -43,14 +44,14 @@ into the unknown, and to a legendary beef-bowl shop in the middle of nowhere.
 | Where | What to do | Reward |
 |---|---|---|
 | Southeast of the shop, a clearing with a pillar at its center | Pick "{{en:scen038:166}}" ({{jp:scen038:166:じっと見つめる}}) | Mercenary Attack +1 |
-| At the counter | Eat gyudon → "{{en:scen038:129}}" ({{jp:scen038:129:全員}}) (1750 P) | Every **male** member's Vitality +1 |
+| At the counter | Eat gyudon → "{{en:scen038:129}}" ({{jp:scen038:129:全員}}) (250 P a bowl) | Vitality +1 for everyone who eats |
 
 ## Walkthrough
 
 A pure novelty stage: just walk **everyone into the restaurant**. The fearsome
 Imperial generals lounging inside **won't lift a finger**. They're only here for
-the noodles. Buy a round (it isn't cheap) for **+1 Vitality to every male** in the
-party.
+the noodles. Buy a round (250 P a bowl, so bring the money) for **+1 Vitality to everyone
+who eats**.
 
 ## Branching dialogue
 
@@ -76,4 +77,4 @@ party.
 | {{jp:scen038:128:女の子だけ}} | {{en:scen038:128}} | Liffany, Luna & Tiaris −1 |
 | {{jp:scen038:129:全員}} | {{en:scen038:129}} | Liffany, Luna & Tiaris +1 |
 
-> Run out the 20-turn clock and Liffany, Luna & Tiaris −1.
+> Miss the turn-21 order stop and Liffany, Luna & Tiaris −1.

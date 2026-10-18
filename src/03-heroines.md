@@ -39,7 +39,7 @@ gate to the **best ending**.
 | Sc. 3 | Attacking Coty, or Tiaris starting the fight | × |
 | After Sc. 4 | Teased about sending the citizens west: bristle / apologize plainly / × sulk | × on sulk |
 | Sc. ?2 start | *"{{en:scen039:38}}"* × *{{en:scen039:40}}* · *{{en:scen039:41}}* | × |
-| Sc. 11 | Sacrificing her at the hidden-item spot | × |
+| Sc. 11 | Sacrificing her at the hidden-item spot | ×× |
 | After Sc. 21 | Comforting her after she loses a parent: ○ *I'm here for you* · × *just forget it* | ○ / × |
 
 ## Liffany

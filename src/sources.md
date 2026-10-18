@@ -32,6 +32,19 @@ were checked against the Japanese game data wherever the game holds them
   (prices, where sold, where found), the per-map buried items, and the
   secret-scenario and ending routes.
 
+Two Japanese web guides were used to cross-check turn triggers, victory and
+defeat rules, hidden items and the best-ending route:
+
+- **らいおさむのお屋敷** (Osamu Rai), the scenario walkthrough and hidden item
+  list for the Saturn and PS2 versions
+  ([strategy](https://osamurai.azimech.net/langrisser/03/strategy),
+  [hidden items](https://osamurai.azimech.net/langrisser/03/hide_item)).
+- **攻略 - ラングリッサー3**, the branching page
+  ([scenario branches](https://langrisser3.xn--1-td6bm19b.com/lng3-bunki.html)).
+
+Where the sources disagree (a few love-index effects, some turn numbers), the
+guide follows the one that matches the game's own script, or the 攻略データ.
+
 The [Langrisser wiki](https://www.langrisser.wiki/wiki/Langrisser_III) was a
 secondary reference for series-canonical name spellings.
 

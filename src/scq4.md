@@ -28,7 +28,7 @@ afterward, choose the new line **"{{en:scen035:261}}"** ({{jp:scen035:261:楽勝
 | Where | What to do | Reward |
 |---|---|---|
 | Behind the throne, where the **carpet is peeled back** | Open the safe with the code **33659033** | {{en:fntsys10:132}} |
-| The throne where **Altemüller** sits | Pick "{{en:scen041:68}}" ({{jp:scen041:68:胸のあたりを調べる}}) | {{en:fntsys10:72}} |
+| The throne where **Altemüller** sits | Answer *yes* to "{{en:scen041:63}}", then pick "{{en:scen041:68}}" ({{jp:scen041:68:胸のあたりを調べる}}), **on turn 15 only** | {{en:fntsys10:72}} |
 
 ## Walkthrough
 

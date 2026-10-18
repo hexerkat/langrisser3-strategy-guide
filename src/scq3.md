@@ -22,8 +22,8 @@ prompt with **"{{en:scen028:135}}"** ({{jp:scen028:135:おがむ}}),
 
 | | |
 |---|---|
-| **Victory** | Reach the queen's chamber (cameo stage) |
-| **Defeat** | Diehärte falls |
+| **Victory** | {{en:scen040:23}} The stage ends when any one of these happens: Jessica sits on the Uminin throne (top center) · Valan, Adon and Samson are defeated · the floor door marked "Do not open!" is opened · Dios answers Valan with "{{en:scen040:160}}" · turn 15 arrives |
+| **Defeat** | {{en:scen040:24}} (in practice, Diehärte or Jessica) |
 | **Bonus** | When **Jessica sits on the throne**, you can hire **Uminin** |
 
 ## Buried treasure
@@ -37,8 +37,10 @@ prompt with **"{{en:scen028:135}}"** ({{jp:scen028:135:おがむ}}),
 ## Walkthrough
 
 A comedy stage built around a **doll chase** to the queen's hall. Sweep up the
-hidden items along the way, and once **Jessica takes the throne**, you gain the
-option to recruit the ever-cheerful **Uminin**.
+hidden items along the way. The best finish is to defeat all but one of the
+brothers, then seat **Jessica on the throne**: the stage ends and you can recruit
+the ever-cheerful **Uminin** from then on. On turn 10, two reinforcements appear
+on each side of the bottom of the map, so keep a few units at the temple door.
 
 ## Branching dialogue
 

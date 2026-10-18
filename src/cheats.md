@@ -43,6 +43,6 @@ documented but unconfirmed.
 
 ## After the credits
 
-Let the ending and staff roll finish, then **leave the screen idle**. Wait and the
-**voice actors' free-talk** begins. Any button press returns you to the title, so
+Let the ending and staff roll finish, then **leave the screen idle**. Wait about three
+minutes and the **voice actors' free-talk** begins. Any button press returns you to the title, so
 sit tight.

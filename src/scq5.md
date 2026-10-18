@@ -20,7 +20,7 @@ Cheats*).
 |---|---|
 | **Victory** | Defeat the Gel family |
 | **Defeat** | Diehärte falls |
-| **Note** | Clearing it returns you to the **title screen** (it's a self-contained bonus) |
+| **Note** | Even a win ends on a **Game Over** screen (it's a self-contained bonus) |
 
 ## Order of battle
 
@@ -38,7 +38,7 @@ A short, silly fight. The extra Gels arrive from the top-middle on turn 2. The
 twist: **once you kill the husband, the wife gains a huge power-up and a meteor
 spell**, so she becomes the real threat. Note that **Tiaris begins with no MP**
 (she spends it all during the opening), so don't count on her magic. Finish the
-family off and the stage drops you back to the title screen.
+family off and the stage ends on a Game Over screen, as a joke.
 
 ```
  BATTLE FLOW
@@ -46,7 +46,7 @@ family off and the stage drops you back to the title screen.
  Turn 2        Extra Gels arrive top-middle.
  The widow     Killing the husband powers up the wife
                (meteor!). Save her for when you're ready.
- After         Clearing returns to the title screen.
+ After         Even a win ends in Game Over.
  ───────────────────────────────────────────────────────
 ```
 

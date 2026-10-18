@@ -29,7 +29,8 @@ Everything below must come together at **Scenario 34** (the crossroads):
 3. **Langrisser equipped** on Diehärte.
 
 **Inside Scenario 34**
-4. **Persuade Varna** with Emerick or Diehärte (move adjacent, it is automatic), and **keep her alive**.
+4. **Persuade Varna** with Emerick or Diehärte (move adjacent, it is automatic) **before**
+   anyone goes near Altemüller, and **keep her alive**.
 5. **Persuade Altemüller** with **Emerick** (move adjacent, it is automatic), and **keep Emerick alive**.
 6. **Defeat Altemüller with Diehärte wielding Langrisser.**
 
@@ -49,8 +50,13 @@ beats, in order:
 | **Sc 17** | "{{en:scen018:56}}" · "{{en:scen018:143}}" · "{{en:scen018:112}}" |
 | **Sc 31** | Reach Freya with Diehärte (**auto-persuasion**). She joins if her arc is complete. |
 
+> If her persuasion fails, you must defeat her in Scenario 31. She then throws
+> herself from the bridge after the battle, and the Shika hero **Do Kahni** joins in
+> her place for the rest of the game.
+
 > Throughout: **never have Diehärte attack Freya, and don't defeat the Dark Knight**
-> in Sc 6/16. Each lowers her index. (See Sc 32/33 for a few more ± choices.)
+> in Sc 6/16. Each lowers her index. Watch out for enemy mages casting **Confuse** while
+> Diehärte stands beside her: a confused Diehärte often strikes Freya first. (See Sc 32/33 for a few more ± choices.)
 
 ## Choosing your heroine
 
@@ -108,7 +114,7 @@ them retreat**. That is how you earn them a happy life after the war.
 
 ## After the credits
 
-Once the ending and staff roll finish, **leave the screen alone**. Wait without
-pressing anything and the cast's **voice-actor free-talk** begins. Press a button
+Once the ending and staff roll finish, **leave the screen alone**. Wait about
+three minutes without pressing anything and the cast's **voice-actor free-talk** begins. Press a button
 and you're bounced back to the title, so be patient. (See also the **Hero Select**
 gag and **New Game+** in *Secrets & Cheats*.)
