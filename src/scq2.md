@@ -1,5 +1,5 @@
 <!--
-  Walkthrough — Secret Stage ?2 (cutscene scen116, battle scen117). Unlocked from Scenario 10.
+  Walkthrough, Secret Stage ?2 (cutscene scen116, battle scen117). Unlocked from Scenario 10.
   Cameo heroes of Langrisser I & II. Canon script spellings: Ledin, Elwin.
 -->
 # Stage ?2: Successive Heroes
@@ -8,14 +8,14 @@
 > {{enf:scen116:19}}
 
 A Time-and-Space Warping Stone, given long ago by the Great Sage, pulls Diehärte
-into a clash with the **heroes of ages past** — Ledin, Elwin and their famous
+into a clash with the **heroes of ages past**: Ledin, Elwin and their famous
 companions from the Langrisser legends.
 
 ## Unlocking ?2 (during Scenario 10)
 
-After rescuing Sophia: move Diehärte beside **Do Kahni** → "Are your wounds
-healed?"; then beside **Keh Shikairo** → ask about the stone (he reveals it is a
-time-crossing relic) → choose **"May I have it"** (2nd option); then beside
+After rescuing Sophia, move Diehärte beside **Do Kahni** → "{{en:scen011:77}}";
+then beside **Keh Shikairo** → ask about the stone (he reveals it is a
+time-crossing relic) → choose **"{{en:scen011:93}}"** (2nd option); then beside
 **Sophia** → ask her to **accept the stone**; finally bring **Sophia and Keh
 Shikairo** next to each other.
 
@@ -41,10 +41,10 @@ Shikairo** next to each other.
 | - | Defeat **all enemies** | {{en:fntsys10:147}} |
 
 ### The heroes' questions (lore Easter egg)
-Answer "yes" to the *"can't you get a date?"* prompt near Ledin/Elwin, then
-approach each hero for a question:
+When the heroes first speak, pick *"{{en:scen039:80}}"*, then approach each hero
+for a question:
 
-| Hero | Answer (JP balizador / in-game EN) | Reward |
+| Hero | Answer (Japanese / English in game) | Reward |
 |---|---|---|
 | Ledin | {{jp:scen039:138:補助魔法ができた}} / "{{en:scen039:138}}" | 500 P |
 | Cherie | {{jp:scen039:214:カルザス}} / "{{en:scen039:214}}" | Power Fruit |
@@ -56,18 +56,17 @@ approach each hero for a question:
 ## Walkthrough
 
 **Ledin and Elwin fight each other** at the start. You may let the legends settle
-it themselves, or take them all on. On the first encounter they speak: choosing
-the **1st option** makes them ally *against you* (and opens the items above); the
-**2nd** forces you to bench two of your own — who stay hostile.
+it themselves, or take them all on. When they first speak, the **1st option**
+(*{{en:scen039:80}}*) makes them ally *against you* and opens the questions above.
+The **2nd** (*{{en:scen039:81}}*) forces you to bench two of your own.
 
 > You may field only a few members here; any **female left out** loses 1 love index.
 
 ## Branching dialogue
 
-### Opening — conversation with Tiaris
-*Field choice — budget 11.*
+### Opening, conversation with Tiaris
 
-| JP (balizador) | EN (in-game) | Effect |
+| Japanese | English (in game) | Effect |
 |---|---|---|
 | {{jp:scen039:40:その通りだ}} | {{en:scen039:40}} | Tiaris −1 |
 | {{jp:scen039:41:それは気のせいだ}} | {{en:scen039:41}} | - |

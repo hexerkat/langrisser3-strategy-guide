@@ -1,5 +1,5 @@
 <!--
-  Strategy Guide — editorial chapter: Item List.
+  Strategy Guide, editorial chapter: Item List.
   VALUE / where-found / effect are authored from the 攻略データ; item NAMES are
   LIVE variables from fntsys10 (the canonical item-name table) so they always
   match the in-game spelling. fntsys10 indices were resolved by JP-name match.
@@ -11,12 +11,12 @@
 
 How to read each table:
 
-- **Value** — sell price (shops and the hidden shop charge the same).
-- **Found** — the scenarios whose shop sells it, or `hidden (Sc N)` for an item
+- **Value**: sell price (shops and the hidden shop charge the same).
+- **Found**: the scenarios whose shop sells it, or `hidden (Sc N)` for an item
   buried on a map / given by an event (see the buried-item notes in each
-  walkthrough). Blank means shop route unknown — buy at the hidden shop or win it
+  walkthrough). Blank means shop route unknown. Buy it at the hidden shop or win it
   from a foe.
-- **Effect** — **AT** attack · **DF** defense · **MV** move · **INT** intellect ·
+- **Effect**: **AT** attack · **DF** defense · **MV** move · **INT** intellect ·
   **R** magic range/area · **A-mod/D-mod** mercenary attack/defense mod ·
   *resist* fire/ice/earth/wind/thunder/holy/spirit · *spell* usable when the item
   is "Used".
@@ -127,7 +127,7 @@ How to read each table:
 | {{en:fntsys10:54}} | 3,200 | Sc 25-32 | AT +5 |
 | {{en:fntsys10:55}} | 3,400 | Sc 32-35 | AT +6 |
 
-### Katana  *(equip: Infantry — Kirikaze only)*
+### Katana  *(equip: Infantry, Kirikaze only)*
 
 | Weapon | Value | Found | Effect |
 |---|---|---|---|
@@ -266,7 +266,7 @@ How to read each table:
 | {{en:fntsys10:124}} | 1,000 | Sc ?4 | D-mod +8, spell: Protection 2 |
 | {{en:fntsys10:132}} | 4,500 | hidden (Sc ?4) | A-mod +8, D-mod +5, hire 8 mercenaries |
 
-## Consumables & boosters  *(not equipped — used)*
+## Consumables & boosters  *(used, not equipped)*
 
 | Item | Value | Found | Effect |
 |---|---|---|---|
@@ -302,8 +302,8 @@ The hero and Holy Beast Jugler can gain a class line at any level with a Rune.
 
 ## Hidden class-up items  *(all 10,000, also sold Sc 35-36)*
 
-Each opens a hidden class for its attribute line — see
-[Classes & Class Change](02-classes.md) for who can take which.
+Each opens a hidden class for its attribute line. See
+[Classes & Class Change](#classes-class-change) for who can take which.
 
 | Item | Opens (attribute) |
 |---|---|
@@ -324,4 +324,4 @@ Each opens a hidden class for its attribute line — see
 | {{en:fntsys10:155}} | Spirit (Jugler) |
 | {{en:fntsys10:156}} | Dragon (Jugler) |
 
-> {{en:fntsys10:153}} — effect unknown (not documented).
+> {{en:fntsys10:153}}: effect unknown (not documented).

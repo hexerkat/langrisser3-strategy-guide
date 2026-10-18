@@ -1,5 +1,5 @@
 <!--
-  Walkthrough — Secret Stage ?1 (cutscene scen114, battle scen115). Unlocked from Scenario 04.
+  Walkthrough, Secret Stage ?1 (cutscene scen114, battle scen115). Unlocked from Scenario 04.
 -->
 # Stage ?1: Forest Gyudon Restaurant, A true story
 *Diehärte's sense of direction strikes again*
@@ -7,7 +7,7 @@
 > {{enf:scen114:19}}
 
 A "wrong turn" born of Diehärte's hopeless sense of direction leads the party deep
-into the unknown — and to a legendary beef-bowl shop run in the middle of nowhere.
+into the unknown, and to a legendary beef-bowl shop in the middle of nowhere.
 
 ## Unlocking ?1 (during Scenario 04)
 
@@ -17,7 +17,7 @@ into the unknown — and to a legendary beef-bowl shop run in the middle of nowh
  ║  End of Turn 2  Lewin asks about the citizens →      ║
  ║                 answer YES, then WEST.               ║
  ║  Any turn       Move Diehärte beside Pierre → his    ║
- ║                 direction question → "It was a test" ║
+ ║                 direction question → "{{en:scen005:100}}" ║
  ║                 (3rd option).                        ║
  ║  After battle   Tiaris speaks → choose the 1st       ║
  ║                 option.                              ║
@@ -35,44 +35,42 @@ into the unknown — and to a legendary beef-bowl shop run in the middle of nowh
 
 | Side | Units |
 |---|---|
-| **"NPC"** | The cook (Citizen Lv 3) · the bunny girl (Citizen Lv 1) · Altemüller (Lv 66) · Varna (Lv 32) · Bortz (Lv 48) · Geier (Lv 36) — *the generals do **not** attack* |
-| **Enemy** | Gell Gust ×8 (Lv 10) |
+| **Neutral** | The cook (Citizen Lv 3) · the bunny girl (Citizen Lv 1) · Altemüller (Lv 66) · Varna (Lv 32) · Bortz (Lv 48) · Geier (Lv 36) (*the generals do **not** attack*) |
+| **Enemy** | Gel Gazer ×8 (Lv 10) |
 
 ## Buried treasure
 
 | Where | What to do | Reward |
 |---|---|---|
-| Southeast of the shop — a clearing with a pillar at its centre | Pick "{{en:scen038:166}}" ({{jp:scen038:166:じっと見つめる}}) | Mercenary Attack +1 |
-| At the counter | Eat gyudon → "{{en:scen038:129}}" ({{jp:scen038:129:全員}}) (1750 P) | All **male** members' Vitality +1 |
+| Southeast of the shop, a clearing with a pillar at its center | Pick "{{en:scen038:166}}" ({{jp:scen038:166:じっと見つめる}}) | Mercenary Attack +1 |
+| At the counter | Eat gyudon → "{{en:scen038:129}}" ({{jp:scen038:129:全員}}) (1750 P) | Every **male** member's Vitality +1 |
 
 ## Walkthrough
 
 A pure novelty stage: just walk **everyone into the restaurant**. The fearsome
-Imperial generals lounging inside **won't lift a finger** — they're only here for
-the noodles. Buy a round (it isn't cheap) for **+1 endurance to every male** in the
+Imperial generals lounging inside **won't lift a finger**. They're only here for
+the noodles. Buy a round (it isn't cheap) for **+1 Vitality to every male** in the
 party.
 
 ## Branching dialogue
 
 ### Reaching the bunny girl
-*Field choice — budget 11.*
 
-| JP (balizador) | EN (in-game) | Effect |
+| Japanese | English (in game) | Effect |
 |---|---|---|
 | {{jp:scen038:104:教えないとケガするぞ}} | {{en:scen038:104}} | Liffany −1 |
 | {{jp:scen038:105:楽しみは取っておこう}} | {{en:scen038:105}} | - |
 
-### After the gell are cleared
+### After the Gels are cleared
 
-| JP (balizador) | EN (in-game) | Effect |
+| Japanese | English (in game) | Effect |
 |---|---|---|
 | {{jp:scen038:207:いやだ}} | {{en:scen038:207}} | Liffany −1 |
 | {{jp:scen038:208:わかった}} | {{en:scen038:208}} | - |
 
 ### Everyone reaches the shop
-*Field choice — budget 11.*
 
-| JP (balizador) | EN (in-game) | Effect |
+| Japanese | English (in game) | Effect |
 |---|---|---|
 | {{jp:scen038:127:自分だけ}} | {{en:scen038:127}} | Liffany, Luna & Tiaris −1 |
 | {{jp:scen038:128:女の子だけ}} | {{en:scen038:128}} | Liffany, Luna & Tiaris −1 |

@@ -15,10 +15,11 @@ translated scripts**, so the guide tracks the patch as it is refined.
 The **Japanese game text is the single source of truth.** Scenario flow, dialogue
 choices, and quoted lines are taken from the game's own scripts; names follow the
 project's canonical glossary (the source guides below use the authors' romaji,
-which served as *context only* — never as spelling).
+which served as *context only*, never as spelling).
 
-Two community guides were used as cross-reference oracles. Every fact taken from
-them was verified against the Japanese game data before it entered this guide.
+Two community guides were used as cross-reference oracles. Facts taken from them
+were checked against the Japanese game data wherever the game holds them
+(dialogue, choices, item, class and unit names).
 
 - **Budianto's Langrisser III FAQ/Walkthrough** (English, GameFAQs).
   Reference for scenario titles, victory/defeat conditions, NPC and enemy
@@ -34,5 +35,5 @@ them was verified against the Japanese game data before it entered this guide.
 The [Langrisser wiki](https://www.langrisser.wiki/wiki/Langrisser_III) was a
 secondary reference for series-canonical name spellings.
 
-Thanks to both authors — their work made this guide far easier to assemble and
+Thanks to both authors. Their work made this guide far easier to assemble and
 verify.
