@@ -1,7 +1,7 @@
 <!--
   Walkthrough — Secret Stage ?4 (cutscene scen120, battle scen121). Unlocked via Scenario 35 + replay.
 -->
-# Stage ?4 — The Mightiest Foe
+# Stage ?4: The Mightiest Foe
 *Altemüller's final request: an all-out duel*
 
 > {{enf:scen120:19}}

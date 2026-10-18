@@ -17,7 +17,7 @@ System*.
 | **True (best)** | Meeting the checklist in Scenario 34 opens **Scenarios 35 & 36**, the true finale. |
 
 > On the true route your **chosen lover is kidnapped** and cannot be used in
-> Scenarios 35–36 (story reasons); **Altemüller and Varna** join in her place.
+> Scenarios 35-36 (story reasons); **Altemüller and Varna** join in her place.
 
 ## Reaching the true ending
 

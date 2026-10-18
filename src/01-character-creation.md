@@ -38,7 +38,7 @@ Stat shorthand: **STR** strength · **DEF** defense · **HP** vitality ·
 
 ---
 
-## Layer 1 — Your attribute path (Q1–Q11)
+## Layer 1 — Your attribute path (Q1-Q11)
 
 Four steps decide the unit type your hero carries into battle.
 
@@ -51,7 +51,7 @@ Four steps decide the unit type your hero carries into battle.
 | {{en:scen001:34}} | **Flier** | Q3 |
 | {{en:scen001:35}} | **Cavalry** | Q4 |
 
-### Step 2 · Level 10 type — Q2–Q4 *(the branch depends on Step 1)*
+### Step 2 · Level 10 type — Q2-Q4 *(the branch depends on Step 1)*
 
 **Q2** *(you chose Infantry)* — *{{en:scen001:36}}*
 
@@ -77,7 +77,7 @@ Four steps decide the unit type your hero carries into battle.
 | {{en:scen001:46}} | Flier (+CHA 3) | Q7 |
 | {{en:scen001:47}} | Spearman | Q10 |
 
-### Step 3 · Level 30 type — Q5–Q10 *(all phrased "{{en:scen001:48}}")*
+### Step 3 · Level 30 type — Q5-Q10 *(all phrased "{{en:scen001:48}}")*
 
 Each of these six variants offers the same kind of "what do you love?" choice;
 only the wording and the resulting type differ. All roads lead to Q11.
@@ -98,11 +98,11 @@ only the wording and the resulting type differ. All roads lead to Q11.
 |---|---|---|---|
 | {{en:scen001:73}} | **Priest-Warrior** | Sophia affinity +1 | Q12 |
 | {{en:scen001:74}} | **Mage** | Sophia affinity −1 | Q14 |
-| {{en:scen001:75}} | **Archer** | — | Q13 |
+| {{en:scen001:75}} | **Archer** | - | Q13 |
 
 ---
 
-## Layer 2 — Personality: stats, skills, items & affinity (Q12–Q27)
+## Layer 2 — Personality: stats, skills, items & affinity (Q12-Q27)
 
 No more branching by *type* — from here each answer simply grants rewards and
 points you to the next question. Pick the bonuses that suit your build.

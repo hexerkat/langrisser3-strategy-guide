@@ -23,24 +23,24 @@ Which attribute each commander rides at every tier. The hero's line is set durin
 | Character | Initial | Lv 10 | Lv 30 | Lv 50 |
 |---|---|---|---|---|
 | **Diehärte** | *set by Character Creation* | | | |
-| Tiaris | Priest-Warrior | Mage | Heretic | — |
+| Tiaris | Priest-Warrior | Mage | Heretic | - |
 | Lewin | Infantry | Spear | Bow | Cavalry |
-| Gilbert | Cavalry | Spear | Marine | — |
-| Pierre | Spear | Cavalry | Marine | — |
-| Liffany | Mage | Bow | Heretic | — |
+| Gilbert | Cavalry | Spear | Marine | - |
+| Pierre | Spear | Cavalry | Marine | - |
+| Liffany | Mage | Bow | Heretic | - |
 | Luna | Flight | Unicorn | Mounted Bow | Infantry |
-| Sophia | Cleric | Priest-Warrior | Mage | — |
-| Fauvel | Priest-Warrior | Mage | Spear | — |
+| Sophia | Cleric | Priest-Warrior | Mage | - |
+| Fauvel | Priest-Warrior | Mage | Spear | - |
 | Jugler | Unicorn | Infantry | Marine | Flight |
 | Dios | Marine | Mounted Bow | Cavalry | Spear |
-| Silver Wolf | Thief | Bow | Infantry | — |
+| Silver Wolf | Thief | Bow | Infantry | - |
 | Jessica | Cleric | Mage | Priest-Warrior | Infantry |
-| Kirikaze | Infantry | Cavalry | Thief | — |
+| Kirikaze | Infantry | Cavalry | Thief | - |
 | Do Kahni | Spear | Bow | Marine | Infantry |
 | Freya | Cleric | Infantry | Unicorn | Mage |
-| Emerick | Cavalry | Infantry | Spear | — |
-| Altemüller | Cavalry | Flight | Infantry | — |
-| Varna | Infantry | Flight | Bow | — |
+| Emerick | Cavalry | Infantry | Spear | - |
+| Altemüller | Cavalry | Flight | Infantry | - |
+| Varna | Infantry | Flight | Bow | - |
 
 ## Class ladders & hidden classes
 

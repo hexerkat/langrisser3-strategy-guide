@@ -229,7 +229,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument('input', type=Path, help='compiled guide markdown (.txt/.md)')
     ap.add_argument('-o', '--output', type=Path, required=True)
-    ap.add_argument('--title', default='Langrisser III — Strategy Guide')
+    ap.add_argument('--title', default='Langrisser III Strategy Guide')
     args = ap.parse_args(argv)
     md = args.input.read_text(encoding='utf-8')
     args.output.write_text(convert(md, args.title), encoding='utf-8')

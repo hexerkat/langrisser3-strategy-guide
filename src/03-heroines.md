@@ -58,14 +58,14 @@ gate to the **best ending**.
 
 | Scenario | Situation → pick | Effect |
 |---|---|---|
-| Sc. 5–30 | **Clear a map cleanly/quickly** → she praises you (*"A splendid command, Lord ___"*) | ○ each time |
+| Sc. 5-30 | **Clear a map cleanly/quickly** → she praises you (*"A splendid command, Lord ___"*) | ○ each time |
 | " | Struggling/dragging a battle out | × |
 | Sc. 5 | Let the ambush appear first (don't cross the central ridge) and keep her alive | ○ |
 | After Sc. 7-T1 | On breakthrough tactics: × *that's not so* · ○ *that's the plan* · *understood* | ○ / × |
 | Sc. 11 | After Feraquea appears, on her missing the ambush: ○ *don't worry* · × *someone like you, troubled?* | ○ / × |
 | After Sc. 15 | On her Dark-Knight feint plan: × *obviously* · ○ *as expected of you* | ○ / × |
 
-> Luna's praise (○) only triggers in Scenarios 5–30, so chase clean, fast clears
+> Luna's praise (○) only triggers in Scenarios 5-30, so chase clean, fast clears
 > the whole midgame. This is why her target is so high.
 
 ## Sophia

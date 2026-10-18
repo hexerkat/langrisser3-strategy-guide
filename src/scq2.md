@@ -2,7 +2,7 @@
   Walkthrough — Secret Stage ?2 (cutscene scen116, battle scen117). Unlocked from Scenario 10.
   Cameo heroes of Langrisser I & II. Canon script spellings: Ledin, Elwin.
 -->
-# Stage ?2 — Successive Heroes
+# Stage ?2: Successive Heroes
 *The heroes of legend, summoned by a wandering stone*
 
 > {{enf:scen116:19}}
@@ -38,7 +38,7 @@ Shikairo** next to each other.
 |---|---|---|
 | Central **stone circle** | Pick "{{en:scen039:229}}" ({{jp:scen039:229:生け贄の儀式}}) → "{{en:scen039:235}}" ({{jp:scen039:235:聖獣}}) | {{en:fntsys10:46}} |
 | ↑ same spot | Pick "{{en:scen039:229}}" ({{jp:scen039:229:生け贄の儀式}}) → "{{en:scen039:236}}" ({{jp:scen039:236:己の血}}) (**HP −10**) | {{en:fntsys10:118}} |
-| — | Defeat **all enemies** | {{en:fntsys10:147}} |
+| - | Defeat **all enemies** | {{en:fntsys10:147}} |
 
 ### The heroes' questions (lore Easter egg)
 Answer "yes" to the *"can't you get a date?"* prompt near Ledin/Elwin, then
@@ -70,4 +70,4 @@ the **1st option** makes them ally *against you* (and opens the items above); th
 | JP (balizador) | EN (in-game) | Effect |
 |---|---|---|
 | {{jp:scen039:40:その通りだ}} | {{en:scen039:40}} | Tiaris −1 |
-| {{jp:scen039:41:それは気のせいだ}} | {{en:scen039:41}} | — |
+| {{jp:scen039:41:それは気のせいだ}} | {{en:scen039:41}} | - |

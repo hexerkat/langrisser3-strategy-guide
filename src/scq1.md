@@ -1,7 +1,7 @@
 <!--
   Walkthrough — Secret Stage ?1 (cutscene scen114, battle scen115). Unlocked from Scenario 04.
 -->
-# Stage ?1 — Hidden Gyudon Restaurant, A true story
+# Stage ?1: Forest Gyudon Restaurant, A true story
 *Diehärte's sense of direction strikes again*
 
 > {{enf:scen114:19}}
@@ -60,14 +60,14 @@ party.
 | JP (balizador) | EN (in-game) | Effect |
 |---|---|---|
 | {{jp:scen038:104:教えないとケガするぞ}} | {{en:scen038:104}} | Liffany −1 |
-| {{jp:scen038:105:楽しみは取っておこう}} | {{en:scen038:105}} | — |
+| {{jp:scen038:105:楽しみは取っておこう}} | {{en:scen038:105}} | - |
 
 ### After the gell are cleared
 
 | JP (balizador) | EN (in-game) | Effect |
 |---|---|---|
 | {{jp:scen038:207:いやだ}} | {{en:scen038:207}} | Liffany −1 |
-| {{jp:scen038:208:わかった}} | {{en:scen038:208}} | — |
+| {{jp:scen038:208:わかった}} | {{en:scen038:208}} | - |
 
 ### Everyone reaches the shop
 *Field choice — budget 11.*

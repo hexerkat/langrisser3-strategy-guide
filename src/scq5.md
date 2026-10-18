@@ -1,7 +1,7 @@
 <!--
   Walkthrough — Secret Stage ?5 (Gel Family). No labeled cutscene; accessed via scenario-select.
 -->
-# Stage ?5 — Tale of a Gell Family
+# Stage ?5: Tale of a Gell Family
 *The villain of the piece is… you*
 
 A bonus joke stage in which Diehärte raids the quiet forest home of a complete

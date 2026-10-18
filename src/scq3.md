@@ -2,7 +2,7 @@
   Walkthrough — Secret Stage ?3 (cutscene scen118, battle scen119). Unlocked from Scenario 27.
   Cho Aniki cameo stage (Uminin et al.).
 -->
-# Stage ?3 — The Queen and Aesthetic Men
+# Stage ?3: The Queen and Aesthetic Men
 *A flying doll, a queen, and some very aesthetic men*
 
 > {{enf:scen118:19}}
