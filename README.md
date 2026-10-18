@@ -1,54 +1,41 @@
-# Langrisser III (Saturn) — Strategy Guide
+# Langrisser III (Sega Saturn) Strategy Guide
 
-A GameFAQs-style strategy guide for **Langrisser III** (Sega Saturn), built to
-travel with the English translation patch
-([langrisser3-english](https://github.com/)).
+A complete strategy guide for **Langrisser III** on the Sega Saturn, written to
+go with the [English translation patch](https://github.com/hexerkat/langrisser3-english).
 
-This repo is the **guide project** (editorial source + generator). The patch repo
-ships only the **compiled result** (the guide `.txt`).
+**Read it online:** https://hexerkat.github.io/langrisser3-strategy-guide/
 
-## How it works
+It covers character creation (the questions of Lushiris), classes and class
+change, the heroine love-index system, every item, a walkthrough of all 36
+scenarios and the five secret stages, the endings and the best-ending route, and
+the secrets and cheats.
 
-The guide text is hand-authored editorial markdown under `src/*.md`, with
-**canonical names written directly**. Only volatile in-game text is a
-**variable** that the generator substitutes LIVE from the patch's script files,
-so the guide always matches the current translation:
+## Quotes that follow the translation
 
-| Variable | Renders |
+The guide text is written by hand in `src/*.md`. Every line of in-game text it
+quotes (dialogue choices, item names, scenario titles) is pulled from the patch's
+script files when the guide is built, so the guide always shows the same words
+as the game you patched.
+
+| In the source | In the guide |
 |---|---|
-| `{{en:scen005:99}}` | the live EN line (inline) |
-| `{{enf:scen005:104}}` | EN dialogue passage (joined) |
-| `{{jp:scen005:99}}` | the JP balizador (immutable anchor) |
-| `{{en:fntsys10:2}}` | a canonical item name (`Longsword`) |
-
-`<$F600>` (the protagonist token) renders as **Diehärte**. A reference to a
-missing entry is a hard error.
+| `{{en:scen005:99}}` | the English line, on one line |
+| `{{enf:scen005:104}}` | an English dialogue passage |
+| `{{jp:scen005:99:実は方向オンチ}}` | the Japanese line, checked against the game |
+| `{{en:fntsys10:2}}` | an item name (`Longsword`) |
 
 ## Build
 
 ```bash
-# point at the patch repo's scripts/ (or set LANG3_SCRIPTS)
 export LANG3_SCRIPTS=/path/to/langrisser3-english/scripts
 
-python3 tools/strategy_guide_gen.py all -o build/langrisser3-guide.txt   # full guide
-python3 tools/strategy_guide_gen.py 01-character-creation                # one chapter -> stdout
-python3 -m pytest tests/ -q                                              # tests
+python3 tools/strategy_guide_gen.py all -o build/langrisser3-guide.txt
+python3 tools/md_to_html.py build/langrisser3-guide.txt -o build/index.html
+python3 -m pytest tests/ -q
 ```
 
-Chapter order lives in `src/guide.json`.
+The online page is built by `.github/workflows/pages.yml` from the scripts of the
+latest published patch, on every push and once a week.
 
-## Status
-
-- ✅ Character Creation (Lushiris quiz, Q1–Q27)
-- ✅ Classes & Class Change
-- ✅ Heroine (love-index) system
-- ✅ Item List — weapons, armor, shields, helmets, accessories, consumables, Runes, hidden class-up items
-- ✅ Walkthrough — **all 36 scenarios + secret stages ?1–?5**
-- ✅ Endings & best-ending route + Secrets & Cheats appendix
-- ⬜ GameFAQs plain-text styling pass + final `.txt` assembly into the patch repo
-
-## Sources
-
-Draft sources (local, read-only): the Budianto walkthrough and the JP
-`攻略データ`. They provide gameplay context only; the JP script entry is the
-authoritative text. Canonical names follow the patch's `NAMES AND TERMS.txt`.
+Chapter order lives in `src/guide.json`. Sources and acknowledgements are in
+`src/sources.md`.

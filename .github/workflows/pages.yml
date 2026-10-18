@@ -1,0 +1,54 @@
+# Builds the guide from the published patch scripts and deploys it to GitHub Pages.
+name: pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: hexerkat/langrisser3-english
+          path: patch
+          sparse-checkout: scripts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - name: Test and build
+        env:
+          LANG3_SCRIPTS: ${{ github.workspace }}/patch/scripts
+        run: |
+          python -m pytest -q tests
+          mkdir -p _site
+          python tools/strategy_guide_gen.py all -o _site/langrisser3-guide.txt
+          python tools/md_to_html.py _site/langrisser3-guide.txt -o _site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
