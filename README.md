@@ -24,6 +24,17 @@ as the game you patched.
 | `{{jp:scen005:99:実は方向オンチ}}` | the Japanese line, checked against the game |
 | `{{en:fntsys10:2}}` | an item name (`Longsword`) |
 
+## Maps
+
+Each scenario chapter shows its battle map, drawn straight from the Japanese
+disc by `tools/extract_maps.py` (the file format is documented at the top of that
+script). The images live in `maps/`. To draw them again:
+
+```bash
+export LANG3_SCRIPTS=/path/to/langrisser3-english/scripts   # for its ISO reader
+python3 tools/extract_maps.py --disc "/path/to/Langrisser III (Japan)"
+```
+
 ## Build
 
 ```bash

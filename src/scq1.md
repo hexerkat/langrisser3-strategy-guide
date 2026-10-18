@@ -24,6 +24,10 @@ into the unknown, and to a legendary beef-bowl shop in the middle of nowhere.
  ╙──────────────────────────────────────────────────────╜
 ```
 
+## Map
+
+![Battle map of Stage ?1 (click for full size)](maps/scq1.webp)
+
 ## At a glance
 
 | | |

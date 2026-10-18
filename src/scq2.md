@@ -19,6 +19,10 @@ time-crossing relic) → choose **"{{en:scen011:93}}"** (2nd option); then besid
 **Sophia** → ask her to **accept the stone**; finally bring **Sophia and Keh
 Shikairo** next to each other.
 
+## Map
+
+![Battle map of Stage ?2 (click for full size)](maps/scq2.webp)
+
 ## At a glance
 
 | | |

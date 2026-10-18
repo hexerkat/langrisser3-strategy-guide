@@ -5,7 +5,8 @@ HTML file (embedded CSS, clickable TOC) for comfortable on-screen reading.
 It handles exactly the markdown the guide generator emits: ATX headings, GFM
 pipe tables, fenced code blocks (the ASCII battle-flow / unlock boxes), block
 quotes, unordered/ordered lists, horizontal rules, and inline **bold**, *italic*,
-`code`, [links](url). Japanese text is passed through (UTF-8).
+`code`, [links](url), and a line holding only ![caption](image) as a figure.
+Japanese text is passed through (UTF-8).
 
 Usage:
     python3 tools/md_to_html.py build/langrisser3-guide.txt -o build/langrisser3-guide.html
@@ -23,6 +24,7 @@ _LINK = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 _BOLD = re.compile(r'\*\*(.+?)\*\*')
 _ITAL = re.compile(r'(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)')
 _HR = re.compile(r'^\s*([-*_])\1{2,}\s*$')
+_IMG = re.compile(r'^\s*!\[([^\]]*)\]\(([^)]+)\)\s*$')
 
 
 def _slug(text: str, used: dict) -> str:
@@ -88,6 +90,15 @@ def convert(md: str, title: str) -> str:
                 i += 1
             i += 1
             out.append('<pre><code>' + '\n'.join(buf) + '</code></pre>')
+            continue
+
+        # figure: a line holding only ![caption](image); the image links to itself
+        m = _IMG.match(line)
+        if m:
+            cap, src = html.escape(m.group(1)), html.escape(m.group(2), quote=True)
+            out.append(f'<figure><a href="{src}"><img src="{src}" alt="{cap}" loading="lazy"></a>'
+                       f'<figcaption>{cap}</figcaption></figure>')
+            i += 1
             continue
 
         # heading
@@ -210,6 +221,9 @@ pre code {{ background:none; padding:0; color:inherit;
 .toc .lvl1 a {{ font-weight:600; }}
 .toc .lvl2 {{ padding-left:1rem; font-size:.92rem; }}
 .toc .lvl2 a {{ color:var(--muted); }}
+figure {{ margin:1rem 0; }}
+figure img {{ max-width:100%; height:auto; display:block; border-radius:4px; image-rendering:pixelated; }}
+figcaption {{ font-size:.85rem; opacity:.75; margin-top:.3rem; }}
 @media (max-width:640px) {{ .toc {{ columns:1; }} }}
 </style>
 </head>

@@ -39,6 +39,7 @@ jobs:
           mkdir -p _site
           python tools/strategy_guide_gen.py all -o _site/langrisser3-guide.txt
           python tools/md_to_html.py _site/langrisser3-guide.txt -o _site/index.html
+          cp -r maps _site/maps
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

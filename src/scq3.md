@@ -18,6 +18,10 @@ prompt with **"{{en:scen028:135}}"** ({{jp:scen028:135:おがむ}}),
 **"{{en:scen028:128}}"** ({{jp:scen028:128:とりあえず踊る}}) and
 **"{{en:scen028:119}}"** ({{jp:scen028:119:ポージングしてみる}}).
 
+## Map
+
+![Battle map of Stage ?3 (click for full size)](maps/scq3.webp)
+
 ## At a glance
 
 | | |

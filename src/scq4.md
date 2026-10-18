@@ -16,6 +16,10 @@ After clearing **Scenario 35**, use scenario-select to **replay Scenario 34**.
 This time **persuade *and then* defeat Altemüller**. In the conversation
 afterward, choose the new line **"{{en:scen035:261}}"** ({{jp:scen035:261:楽勝だったので平気だ}}).
 
+## Map
+
+![Battle map of Stage ?4 (click for full size)](maps/scq4.webp)
+
 ## At a glance
 
 | | |
